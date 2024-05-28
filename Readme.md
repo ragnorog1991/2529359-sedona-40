@@ -3,6 +3,7 @@
 * Студент: [Станислав Конарев](https://up.htmlacademy.ru/htmlcss/40/user/2529359).
 * Наставник: [Валера
 Хаслер](https://htmlacademy.ru/profile/id224163).
+* Сайт: https://ragnorog1991.github.io/2529359-sedona-40
 
 ---
 
