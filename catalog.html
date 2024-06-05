@@ -51,7 +51,7 @@
 
     <main class="main-inner">
       <header class="inner-header">
-        <h1 class="inner-header__title">Каталог</h1>
+        <h1 class="inner-header__title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link visually-hidden" href="./index.html">Домой</a>
@@ -114,6 +114,21 @@
               </li>
             </ul>
           </fieldset>
+        </form>
+        <form action="https://echo.htmlacademy.ru/" class="catalog__price" method="get">
+          <legend class="catalog__filter-title">Стоимость, ₽:</legend>
+          <label class="control">
+            <input type="number" class="control-input" value="0">
+          </label>
+          <label class="control">
+            <input type="number" class="control-input" value="9000">
+          </label>
+          <label class="control">
+            <input value="0" type="range" min="0" max="10000" />
+            <input value="10000" type="range" min="0" max="10000" />
+          </label>
+          <button class="catalog__button" type="submit">Применить</button>
+          <button class="catalog__button" type="reset">Сбросить</button>
         </form>
       </section>
 
