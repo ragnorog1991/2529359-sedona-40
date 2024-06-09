@@ -1,9 +1,23 @@
 .navigation {
   display: flex;
+  margin-right: 70px;
+  margin-left: 70px;
   min-height: 64px;
-  background: rgb(255, 0, 0);
+  background: rgb(255, 255, 255);
+  justify-content: space-between;
+
 
   &__list {
-    background-color: red($color: #000000)
+    display: flex;
+    width: 507px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    width: 268px;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
