@@ -1,1 +1,7 @@
-.navigation {}
+.navigation {
+  display: flex;
+  min-height: 64px;
+  background: rgb(255, 0, 0);
+
+  &__list {}
+}
