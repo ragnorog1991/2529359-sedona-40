@@ -15,4 +15,9 @@
   margin: 0 auto;
 }
 
+.visually-hidden {
+  visibility: hidden
+}
+
+
 @import './blocks/header';
