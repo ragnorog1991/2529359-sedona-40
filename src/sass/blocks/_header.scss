@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   display: flex;
   margin-right: 70px;
   margin-left: 70px;
@@ -31,7 +32,23 @@
     color: rgb(0, 0, 0);
 
     &-link {
-      color: #000;
+      color: #fff;
+      font-family: PT Sans;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-item {
+      position: relative;
+
+      &-wrapper {
+        width: 160px;
+        height: 36px;
+        border-radius: 4px;
+        background: rgb(117, 97, 87);
+      }
     }
   }
 }
