@@ -1,5 +1,9 @@
 .promo {
   background-color: #000;
   position: relative;
-  background: url('../../img/background/sedona_bg.jpg') no-repeat 50% / cover;
+  background: url('../../img/background/sedona_bg.jpg') no-repeat 50% / auto;
+
+  &__img {
+    justify-content: right;
+  }
 }
