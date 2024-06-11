@@ -18,8 +18,14 @@
   &__list {
     display: flex;
     width: 507px;
-    justify-content: space-evenly;
     list-style-type: none;
+
+    &-wrapper {
+      display: flex;
+      width: 339px;
+      justify-content: space-evenly;
+    }
+
 
     &-item {
       align-self: center;
