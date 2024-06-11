@@ -1,9 +1,13 @@
 .promo {
-  background-color: #000;
+  display: flex;
   position: relative;
+  background-color: #000;
   background: url('../../img/background/sedona_bg.jpg') no-repeat 50% / auto;
 
+
   &__img {
-    justify-content: right;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 82px;
   }
 }
