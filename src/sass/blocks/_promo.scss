@@ -1,6 +1,5 @@
 .promo {
   background-color: #000;
-  background-image: url(../../img/background/sedona_bg.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  position: relative;
+  background: url('../../img/background/sedona_bg.jpg') no-repeat 50% / cover;
 }
