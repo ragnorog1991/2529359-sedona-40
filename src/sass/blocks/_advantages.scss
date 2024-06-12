@@ -19,4 +19,16 @@
     text-align: center;
     margin-top: 25px;
   }
+
+  &__block {
+    display: grid;
+    width: 400px;
+    height: 385px;
+    background: rgb(130, 179, 211);
+
+    &-texts {
+      width: 230px;
+      height: 181px;
+    }
+  }
 }
