@@ -7,47 +7,42 @@
   background: rgb(255, 255, 255);
   justify-content: space-between;
 
-  &__line {
-    border: 2px solid rgb(117, 98, 87);
-    width: 68px;
-    height: 0;
-    visibility: hidden;
-  }
-
-  &__logo {
-    position: relative;
-
-    &-img {
-      position: relative;
-      z-index: 2;
-    }
-  }
-
-
-  &__list {
+  &__container {
     display: flex;
-    width: 507px;
-    list-style-type: none;
 
-    &-wrapper {
+    &-logo {
+      position: relative;
+
+      &-img {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    &-list {
       display: flex;
+      position: relative;
+      width: 507px;
+      list-style-type: none;
       width: 339px;
-      justify-content: space-evenly;
-    }
+      justify-content: space-around;
 
 
-    &-item {
-      align-self: center;
+      &-item {
+        align-self: center;
 
-    }
+      }
 
-    &-link {
-      color: rgb(0, 0, 0);
-      font-family: PT Sans;
-      font-size: 20px;
-      font-weight: 700;
+      &-link {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: 700;
+      }
     }
   }
+
+
+
 
   &__user {
     display: flex;
