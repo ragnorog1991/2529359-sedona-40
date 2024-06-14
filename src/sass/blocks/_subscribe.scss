@@ -1,3 +1,13 @@
 .subscribe {
   min-height: 415px;
+  background: url('../img/background/Subscribe.jpg') no-repeat 50% / auto;
+
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+  }
 }
