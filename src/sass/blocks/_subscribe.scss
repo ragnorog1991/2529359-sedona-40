@@ -1,4 +1,37 @@
 .subscribe {
   min-height: 415px;
   background: url('../img/background/Subscribe.jpg') no-repeat 50% / auto;
+  padding: 96px 104px;
+
+  &__descr {
+    margin-top: 20px;
+  }
+
+  &__form {
+    display: block;
+    text-align: center;
+    margin-top: 54px;
+  }
+}
+
+.field {
+  border: none;
+  border-radius: 4px;
+  background: rgb(242, 242, 242);
+  width: 452px;
+  height: 52px;
+}
+
+.subscribe__btn {
+  border: none;
+  border-radius: 4px;
+  background: $main-color;
+  color: #fff;
+  width: 232px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
