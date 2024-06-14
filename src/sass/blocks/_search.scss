@@ -1,6 +1,7 @@
 .search {
   position: relative;
   min-height: 406px;
+  padding: 96px 96px;
 
   &__title {
     color: rgb(0, 0, 0);
@@ -9,7 +10,6 @@
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 96px;
   }
 
   &__descr {
