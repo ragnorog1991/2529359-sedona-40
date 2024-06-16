@@ -4,12 +4,18 @@
 @import './base/variables';
 @import './base/mixins';
 
-@font-face {
-  font-family: "PT Sans";
-  src:
-    url("../fonts/ptsans-400.woff2") format("woff2"),
-    url("../fonts/ptsans-700.woff2") format("woff");
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 html {
   height: 100%;
