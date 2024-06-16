@@ -4,6 +4,13 @@
 @import './base/variables';
 @import './base/mixins';
 
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsans-400.woff2") format("woff2"),
+    url("../fonts/ptsans-700.woff2") format("woff");
+}
+
 html {
   height: 100%;
 }
