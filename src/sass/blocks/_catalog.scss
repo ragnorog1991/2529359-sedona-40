@@ -1,0 +1,25 @@
+.catalog {
+  min-height: 1647px;
+
+  &__wrapper {
+    display: grid;
+    max-height: 412px;
+    background: url('../img/background/bg_filter.jpg') no-repeat 50% / auto;
+    justify-content: center;
+
+    &-header {
+      width: 1060px;
+      height: 107px;
+      margin-top: 35px;
+
+      &-title {
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+      }
+    }
+
+  }
+}
