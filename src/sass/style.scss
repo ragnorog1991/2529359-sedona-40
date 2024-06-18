@@ -48,6 +48,10 @@ body {
   visibility: hidden
 }
 
+li:last-child {
+  margin-bottom: 0;
+}
+
 @import './blocks/title';
 @import './blocks/header';
 @import './blocks/promo';
