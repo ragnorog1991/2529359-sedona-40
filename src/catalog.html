@@ -140,167 +140,170 @@
                   </li>
                 </ul>
               </fieldset>
-              <legend class="catalog__wrapper-form-group-title">Стоимость, ₽:</legend>
-              <label class="control">
-                <input type="number" name="price" class="control-input" value="0">
-              </label>
-              <label class="control">
-                <input type="number" name="price" class="control-input" value="9000">
-              </label>
-              <label class="control">
-                <input value="0" type="range" name="range_price" min="0" max="10000" />
-                <input value="10000" type="range" name="range_price" min="0" max="10000" />
-              </label>
-              <button class="catalog__button" type="submit">Применить</button>
-              <button class="catalog__button" type="reset">Сбросить</button>
+              <div class="catalog__wrapper-form-group">
+                <legend class="catalog__wrapper-form-group-title">Стоимость, ₽:</legend>
+                <div class="catalog__wrapper-form-group-price">
+                  <label class="control">
+                    <input class="price" type="number" name="price" class="control-input" value="0">
+                  </label>
+                  <label class="control">
+                    <input class="price" type="number" name="price" class="control-input" value="9000">
+                  </label>
+                </div>
+                <label class="catalog__wrapper-form-group-range">
+                  <input class="catalog__wrapper-form-group-range" value="0" type="range" name="range_price" min="0"
+                    max="10000" />
+                </label>
+              </div>
+              <div class="catalog__wrapper-form-group">
+                <button class="catalog__wrapper-form-group-button" type="submit">Применить</button>
+                <button class="catalog__wrapper-form-group-button nocolor" type="reset">Сбросить</button>
+              </div>
             </form>
           </div>
+          <h2 class="catalog__find-hotel">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a href="catalog.html?view=tile" class="button button-light">
+            <span class="visually-hidden">Показать плитки</span>
+          </a>
+          <a href="catalog.html?view=card" class="button button-light">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+          <a class="button" href="catalog.html?view=list">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <div class="catalog__hotel-card">
+            <a class="catalog__hotel-card-link" href="product.html">
+              <img class="catalog__hotel-card-image" src="./img/hotel-1.jpeg" alt="hotel-1">
+              <h3 class="catalog__hotel-card-title">Amara Resort & Spa</h3>
+            </a>
+            <div class="catalog__hotel-card-descr">Гостиница</div>
+            <b class="catalog__hotel-card-price">От 4000 ₽</b>
+            <a href="#" class="catalog__hotel-card-button">подробнее</a>
+            <a href="#" class="catalog__hotel-card-button">в избранное</a>
+            <div class="catalog__hotel-card-stars">
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+            </div>
+            <div class="catalog__hotel-card-rating">
+              <p class="catalog__hotel-card-rating-text">Рейтинг: 8,5</p>
+            </div>
+          </div>
 
+          <div class="catalog__hotel-card">
+            <a class="catalog__hotel-card-link" href="product.html">
+              <img class="catalog__hotel-card-image" src="./img/hotel-2.jpeg" alt="hotel-2">
+              <h3 class="catalog__hotel-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <div class="catalog__hotel-card-descr">Гостиница</div>
+            <b class="catalog__hotel-card-price">От 5000 ₽</b>
+            <a href="#" class="catalog__hotel-card-button">подробнее</a>
+            <a href="#" class="catalog__hotel-card-button">в избранное</a>
+            <div class="catalog__hotel-card-stars">
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+            </div>
+            <div class="catalog__hotel-card-rating">
+              <p class="catalog__hotel-card-rating-text">Рейтинг: 9,2</p>
+            </div>
+          </div>
 
-        </div>
-        <h2 class="catalog__find-hotel">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="catalog.html?view=tile" class="button button-light">
-          <span class="visually-hidden">Показать плитки</span>
-        </a>
-        <a href="catalog.html?view=card" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <a class="button" href="catalog.html?view=list">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <div class="catalog__hotel-card">
-          <a class="catalog__hotel-card-link" href="product.html">
-            <img class="catalog__hotel-card-image" src="./img/hotel-1.jpeg" alt="hotel-1">
-            <h3 class="catalog__hotel-card-title">Amara Resort & Spa</h3>
-          </a>
-          <div class="catalog__hotel-card-descr">Гостиница</div>
-          <b class="catalog__hotel-card-price">От 4000 ₽</b>
-          <a href="#" class="catalog__hotel-card-button">подробнее</a>
-          <a href="#" class="catalog__hotel-card-button">в избранное</a>
-          <div class="catalog__hotel-card-stars">
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
+          <div class="catalog__hotel-card">
+            <a class="catalog__hotel-card-link" href="product.html">
+              <img class="catalog__hotel-card-image" src="./img/hotel-3.jpeg" alt="hotel-3">
+              <h3 class="catalog__hotel-card-title">Desert Quail Inn</h3>
+            </a>
+            <div class="catalog__hotel-card-descr">Гостиница</div>
+            <b class="catalog__hotel-card-price">От 2500 ₽</b>
+            <a href="#" class="catalog__hotel-card-button">подробнее</a>
+            <a href="#" class="catalog__hotel-card-button">в избранное</a>
+            <div class="catalog__hotel-card-stars">
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+            </div>
+            <div class="catalog__hotel-card-rating">
+              <p class="catalog__hotel-card-rating-text">Рейтинг: 6,9</p>
+            </div>
           </div>
-          <div class="catalog__hotel-card-rating">
-            <p class="catalog__hotel-card-rating-text">Рейтинг: 8,5</p>
-          </div>
-        </div>
 
-        <div class="catalog__hotel-card">
-          <a class="catalog__hotel-card-link" href="product.html">
-            <img class="catalog__hotel-card-image" src="./img/hotel-2.jpeg" alt="hotel-2">
-            <h3 class="catalog__hotel-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <div class="catalog__hotel-card-descr">Гостиница</div>
-          <b class="catalog__hotel-card-price">От 5000 ₽</b>
-          <a href="#" class="catalog__hotel-card-button">подробнее</a>
-          <a href="#" class="catalog__hotel-card-button">в избранное</a>
-          <div class="catalog__hotel-card-stars">
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
+          <div class="catalog__hotel-card">
+            <a class="catalog__hotel-card-link" href="product.html">
+              <img class="catalog__hotel-card-image" src="./img/hotel-4.jpeg" alt="hotel-4">
+              <h3 class="catalog__hotel-card-title">GreenTree Inn</h3>
+            </a>
+            <div class="catalog__hotel-card-descr">Гостиница</div>
+            <b class="catalog__hotel-card-price">От 1500 ₽</b>
+            <a href="#" class="catalog__hotel-card-button">подробнее</a>
+            <a href="#" class="catalog__hotel-card-button">в избранное</a>
+            <div class="catalog__hotel-card-stars">
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+              <span class="square">
+                <span class="visually-hidden">звезда</span>
+              </span>
+            </div>
+            <div class="catalog__hotel-card-rating">
+              <p class="catalog__hotel-card-rating-text">Рейтинг: 5,0</p>
+            </div>
           </div>
-          <div class="catalog__hotel-card-rating">
-            <p class="catalog__hotel-card-rating-text">Рейтинг: 9,2</p>
+          <div class="catalog__divider"></div>
+          <div class="catalog__pogination">
+            <a href="#" class="catalog__pogination-link">
+              1
+            </a>
           </div>
-        </div>
-
-        <div class="catalog__hotel-card">
-          <a class="catalog__hotel-card-link" href="product.html">
-            <img class="catalog__hotel-card-image" src="./img/hotel-3.jpeg" alt="hotel-3">
-            <h3 class="catalog__hotel-card-title">Desert Quail Inn</h3>
-          </a>
-          <div class="catalog__hotel-card-descr">Гостиница</div>
-          <b class="catalog__hotel-card-price">От 2500 ₽</b>
-          <a href="#" class="catalog__hotel-card-button">подробнее</a>
-          <a href="#" class="catalog__hotel-card-button">в избранное</a>
-          <div class="catalog__hotel-card-stars">
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
+          <div class="catalog__pogination">
+            <a href="#" class="catalog__pogination-link">
+              2
+            </a>
           </div>
-          <div class="catalog__hotel-card-rating">
-            <p class="catalog__hotel-card-rating-text">Рейтинг: 6,9</p>
+          <div class="catalog__pogination">
+            <a href="#" class="catalog__pogination-link">
+              3
+            </a>
           </div>
-        </div>
-
-        <div class="catalog__hotel-card">
-          <a class="catalog__hotel-card-link" href="product.html">
-            <img class="catalog__hotel-card-image" src="./img/hotel-4.jpeg" alt="hotel-4">
-            <h3 class="catalog__hotel-card-title">GreenTree Inn</h3>
-          </a>
-          <div class="catalog__hotel-card-descr">Гостиница</div>
-          <b class="catalog__hotel-card-price">От 1500 ₽</b>
-          <a href="#" class="catalog__hotel-card-button">подробнее</a>
-          <a href="#" class="catalog__hotel-card-button">в избранное</a>
-          <div class="catalog__hotel-card-stars">
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
-            <span class="square">
-              <span class="visually-hidden">звезда</span>
-            </span>
+          <div class="catalog__pogination">
+            <a href="#" class="catalog__pogination-link">
+              4
+            </a>
           </div>
-          <div class="catalog__hotel-card-rating">
-            <p class="catalog__hotel-card-rating-text">Рейтинг: 5,0</p>
+          <div class="catalog__pogination">
+            <a href="#" class="catalog__pogination-link">
+              10
+            </a>
           </div>
-        </div>
-        <div class="catalog__divider"></div>
-        <div class="catalog__pogination">
-          <a href="#" class="catalog__pogination-link">
-            1
-          </a>
-        </div>
-        <div class="catalog__pogination">
-          <a href="#" class="catalog__pogination-link">
-            2
-          </a>
-        </div>
-        <div class="catalog__pogination">
-          <a href="#" class="catalog__pogination-link">
-            3
-          </a>
-        </div>
-        <div class="catalog__pogination">
-          <a href="#" class="catalog__pogination-link">
-            4
-          </a>
-        </div>
-        <div class="catalog__pogination">
-          <a href="#" class="catalog__pogination-link">
-            10
-          </a>
-        </div>
         </div>
       </section>
 

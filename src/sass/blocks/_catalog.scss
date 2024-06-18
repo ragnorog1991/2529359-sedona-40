@@ -3,14 +3,15 @@
 
   &__wrapper {
     display: grid;
-    max-height: 412px;
+    min-height: 412px;
+    background-color: #000;
     background: url('../img/background/bg_filter.jpg') no-repeat 50% / auto;
     justify-content: center;
+    padding: 35px 70px 70px 70px;
 
     &-header {
       width: 1060px;
       height: 107px;
-      margin-top: 35px;
 
       &-title {
         color: rgb(255, 255, 255);
@@ -33,15 +34,15 @@
           line-height: 21px;
         }
 
-        :first-child::before {
-          content: "";
-          width: 12px;
-          height: 12px;
-          display: block;
-          background-image: url("../../icons/home_link.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-        }
+        // :first-child::before {
+        //   content: "";
+        //   width: 12px;
+        //   height: 12px;
+        //   display: block;
+        //   background-image: url("../../icons/home_link.svg");
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        // }
 
         :nth-child(2)::before {
           content: "";
@@ -60,6 +61,7 @@
       width: 1060px;
       grid-template-columns: 151px 151px 288px 191px;
       column-gap: 70px;
+      justify-content: space-between;
 
       &-group {
         display: grid;
@@ -73,6 +75,7 @@
 
         &-list {
           list-style-type: none;
+          margin-top: 32px;
 
           &-item {
             color: rgb(255, 255, 255);
@@ -82,8 +85,56 @@
           }
         }
 
+        &-button {
+          display: grid;
+          width: 191px;
+          height: 36px;
+          align-self: center;
+          border-radius: 4px;
+          background: $main-color;
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          align-content: center;
+          padding: 8px 50px 8px 50px;
+        }
+
+        &-range {
+          width: 287px;
+          height: 20px;
+          border: rgb(255, 255, 255);
+
+        }
+
+        &-price {
+          display: flex;
+          width: 286px;
+        }
+
       }
     }
 
   }
+}
+
+.nocolor {
+  background: none;
+  border: none;
+}
+
+.price {
+  width: 143px;
+  height: 48px;
+}
+
+.control-input {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  margin-bottom: 0;
 }
