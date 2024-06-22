@@ -136,7 +136,7 @@
       display: grid;
       padding: 20px;
       width: 340px;
-      height: 438px;
+      min-height: 438px;
       justify-content: center;
       grid-template-columns: repeat(2, 140px);
       column-gap: 20px;
@@ -176,31 +176,36 @@
 
       &-button {
         text-align: center;
-        width: 140px;
-        height: 36px;
+        min-width: 140px;
+        min-height: 36px;
         background-color: $main-color;
         color: rgb(255, 255, 255);
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
         margin-top: 16px;
+        border-radius: 4px;
+        align-content: center;
       }
 
       &-rating {
-        display: grid;
+        display: flex;
         width: 140px;
         height: 37px;
-        border-radius: 4px;
         background: rgb(242, 242, 242);
-        justify-content: center;
-        align-self: flex-end;
         margin-top: 16px;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+
 
         &-text {
+          display: flex;
           font-size: 16px;
           font-weight: 400;
-          text-align: center;
           text-transform: uppercase;
+          margin-bottom: 0;
+
         }
       }
 
