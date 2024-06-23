@@ -9,7 +9,7 @@
   &__container {
     display: flex;
 
-    &-logo {
+    &-link {
       position: relative;
 
       &-img {
@@ -22,7 +22,8 @@
     &-list {
       display: flex;
       list-style-type: none;
-      width: 339px;
+      min-width: 339px;
+      flex-wrap: wrap;
 
 
       &-item {
