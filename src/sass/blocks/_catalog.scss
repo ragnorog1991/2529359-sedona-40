@@ -126,6 +126,34 @@
     height: 49px;
     justify-content: space-between;
     margin: 50px 70px 0 70px;
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-wrapper {
+      display: flex;
+      min-width: 522px;
+      min-height: 49px;
+      justify-content: center;
+
+      :last-child {
+        margin-right: 0;
+      }
+
+      &-button {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(229, 229, 229);
+        border-radius: 4px;
+        margin-right: 8px;
+      }
+    }
   }
 
   &__container {
@@ -136,11 +164,6 @@
     padding: 0 70px 0px 70px;
     gap: 20px;
 
-    &-title {
-      font-size: 30px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
 
     &-card {
       display: grid;
@@ -274,6 +297,7 @@ label {
   width: 292px;
   height: 49px;
   padding: 10px 20px 10px 20px;
+  margin-right: auto;
 
 }
 

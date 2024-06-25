@@ -149,21 +149,34 @@
             </form>
           </div>
           <div class="catalog__sort">
-            <h2 class="catalog__container-title">Найдено гостиниц: 38</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option class="sorting" value="popular">Сначала популярные</option>
-              <option class="sorting" value="cheap">Сначала дешёвые</option>
-              <option class="sorting" value="expensive">Сначала дорогие</option>
-            </select>
-            <a href="catalog.html?view=tile" class="button button-light">
-              <span class="visually-hidden">Показать плитки</span>
-            </a>
-            <a href="catalog.html?view=card" class="button button-light">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-            <a class="button" href="catalog.html?view=list">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
+            <h2 class="catalog__sort-title">Найдено гостиниц: 38</h2>
+            <div class="catalog__sort-wrapper">
+              <select class="select-control" aria-label="Сортировка">
+                <option class="sorting" value="popular">Сначала популярные</option>
+                <option class="sorting" value="cheap">Сначала дешёвые</option>
+                <option class="sorting" value="expensive">Сначала дорогие</option>
+              </select>
+              <a href="catalog.html?view=tile" class="catalog__sort-wrapper-button">
+                <span class="visually-hidden">Показать плитки</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                  <path fill="#000" fill-rule="evenodd"
+                    d="M0 0h4v6H0V0Zm10 0H6v6h4V0Zm2 0h4v6h-4V0ZM0 8h4v6H0V8Zm6 0h4v6H6V8Zm10 0h-4v6h4V8Z" />
+                </svg>
+              </a>
+              <a href="catalog.html?view=card" class="catalog__sort-wrapper-button">
+                <span class="visually-hidden">Показать список</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                  <path fill="#000" fill-rule="evenodd" d="M0 0h16v10H0V0Zm14 8V2H2v6h12ZM0 12h16v2H0v-2Z" />
+                </svg>
+              </a>
+              <a href="catalog.html?view=list" class="catalog__sort-wrapper-button">
+                <span class="visually-hidden">Показать карточки</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                  <path fill="#000" fill-rule="evenodd"
+                    d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" />
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="catalog__container">
             <!-- разметка карточек товаров -->
