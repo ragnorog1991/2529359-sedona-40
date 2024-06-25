@@ -120,11 +120,20 @@
 
   }
 
+  &__sort {
+    display: flex;
+    width: 1060px;
+    height: 49px;
+    justify-content: space-between;
+    margin: 50px 70px 0 70px;
+  }
+
   &__container {
     display: grid;
     min-height: 985px;
+    margin-top: 40px;
     grid-template-columns: repeat(3, 340px);
-    padding: 50px 70px 0px 70px;
+    padding: 0 70px 0px 70px;
     gap: 20px;
 
     &-title {
@@ -265,7 +274,6 @@ label {
   width: 292px;
   height: 49px;
   padding: 10px 20px 10px 20px;
-  grid-column: 3 / 3;
 
 }
 
