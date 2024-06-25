@@ -74,13 +74,18 @@
     color: rgb(0, 0, 0);
     margin-left: 285px;
 
-    :nth-child(3) {
-      align-self: center;
+    :first-child {
+      background: url("../../icons/search.svg") no-repeat center;
+    }
+
+    :nth-child(2) {
+      background: url("../../icons/like.svg") no-repeat center;
     }
 
     &-item {
       display: flex;
       align-self: center;
+
 
       &-link {
         display: block;
@@ -108,13 +113,3 @@ a:hover {
   text-decoration: none;
   color: #000;
 }
-
-// .loupe::before {
-//   content: "поиск";
-//   width: 18px;
-//   height: 18px;
-//   display: block;
-//   background-image: url("../../icons/search.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
