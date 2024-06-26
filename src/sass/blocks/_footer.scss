@@ -12,6 +12,12 @@
     align-self: center;
     align-items: center;
 
+    &-link {
+      width: 114.9px;
+      height: 32.9px;
+      border: 0.5px dashed #000000;
+    }
+
     &-list {
       display: flex;
       min-width: 120px;
@@ -24,6 +30,20 @@
       font-size: 40px;
       font-weight: 400;
       line-height: 40px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47.33px;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+    border: 0.5px dashed #83B3D3;
+
+    :active {
+      opacity: 0.3;
     }
   }
 }
