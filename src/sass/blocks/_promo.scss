@@ -6,19 +6,18 @@
   background: url('../img/background/sedona_bg.jpg') no-repeat 50% / auto;
   padding: 51px 82px;
 
+  :before {
+    position: absolute;
+    content: "";
+    width: 1200px;
+    height: 57px;
+    bottom: 0;
+    background: url('../../img/background/sedona_bg_vector.svg') no-repeat 50% / auto;
+  }
+
 
   &__img {
     display: flex;
     margin: 0 auto;
   }
 }
-
-// .substrate::after {
-//   content: "ПОДЛОЖКА";
-//   width: 1200px;
-//   height: 57px;
-//   display: block;
-//   background-image: url("../../img/background/sedona_bg_vector.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }

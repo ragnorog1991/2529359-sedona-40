@@ -35,16 +35,6 @@
           line-height: 21px;
         }
 
-        // :first-child::before {
-        //   content: "";
-        //   width: 12px;
-        //   height: 12px;
-        //   display: block;
-        //   background-image: url("../../icons/home_link.svg");
-        //   background-repeat: no-repeat;
-        //   background-position: center;
-        // }
-
         :nth-child(2)::before {
           content: "";
           width: 12px;
@@ -66,6 +56,8 @@
 
       &-group {
         display: grid;
+        width: 288px;
+        justify-content: space-between;
 
         &-title {
           color: rgb(255, 255, 255);
@@ -284,10 +276,27 @@
   border: none;
 }
 
-.price {
+.price1 {
   width: 143px;
   height: 48px;
+  border-radius: 4px 0px 0px 4px;
+  background: rgb(242, 242, 242);
+  padding: 12px 20px 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
 }
+
+.price2 {
+  width: 143px;
+  height: 48px;
+  border-radius: 0px 4px 4px 0px;
+  background: rgb(242, 242, 242);
+  padding: 12px 20px 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
 
 .control-input {
   background-color: #fff;
