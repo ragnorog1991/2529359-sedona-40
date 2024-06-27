@@ -268,6 +268,13 @@
       }
 
     }
+
+    &-stars {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+
+    }
   }
 }
 
@@ -340,17 +347,93 @@ label {
     width: 60px;
     height: 60px;
     background-color: $main-color;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+
+    &_current {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      background-color: #F2F2F2;
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+
+    &_expand {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      background-color: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      color: rgb(0, 0, 0);
+      font-size: 22px;
+      font-weight: 400;
+    }
   }
 }
 
 .divider {
   margin-top: 41px;
   border: 1px solid rgb(230, 230, 230);
+}
+
+.square1::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 17px;
+  margin-top: 26px;
+  background: url('../../icons/star.svg') no-repeat 50% / auto;
+}
+
+.square2::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 17px;
+  margin-top: 26px;
+  right: 100px;
+  background: url('../../icons/star.svg') no-repeat 50% / auto;
+}
+
+.square3::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 17px;
+  margin-top: 26px;
+  right: 80px;
+  background: url('../../icons/star.svg') no-repeat 50% / auto;
+}
+
+.square4::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 17px;
+  margin-top: 26px;
+  right: 60px;
+  background: url('../../icons/star.svg') no-repeat 50% / auto;
+}
+
+.square5::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 17px;
+  margin-top: 26px;
+  right: 40px;
+  background: url('../../icons/star.svg') no-repeat 50% / auto;
 }
