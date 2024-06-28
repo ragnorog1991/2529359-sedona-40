@@ -27,22 +27,17 @@
         width: 114px;
         height: 21px;
         list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
 
         :last-child {
           color: rgb(255, 255, 255);
+          font-family: PT Sans;
           font-size: 16px;
           font-weight: 400;
           line-height: 21px;
-        }
-
-        :nth-child(2)::before {
-          content: "";
-          width: 12px;
-          height: 12px;
-          display: block;
-          background-image: url("../../icons/arrow.svg");
-          background-repeat: no-repeat;
-          background-position: center;
+          letter-spacing: 0%;
+          text-align: left;
         }
       }
     }
@@ -403,7 +398,7 @@ label {
   width: 18px;
   height: 17px;
   margin-top: 26px;
-  background: url('../../icons/star.svg') no-repeat 50% / auto;
+  background-image: url('../icons/star.svg');
 }
 
 .square2::before {
@@ -413,7 +408,7 @@ label {
   height: 17px;
   margin-top: 26px;
   right: 100px;
-  background: url('../../icons/star.svg') no-repeat 50% / auto;
+  background-image: url('../icons/star.svg');
 }
 
 .square3::before {
@@ -423,7 +418,7 @@ label {
   height: 17px;
   margin-top: 26px;
   right: 80px;
-  background: url('../../icons/star.svg') no-repeat 50% / auto;
+  background-image: url('../icons/star.svg');
 }
 
 .square4::before {
@@ -433,7 +428,7 @@ label {
   height: 17px;
   margin-top: 26px;
   right: 60px;
-  background: url('../../icons/star.svg') no-repeat 50% / auto;
+  background-image: url('../icons/star.svg');
 }
 
 .square5::before {
@@ -443,7 +438,7 @@ label {
   height: 17px;
   margin-top: 26px;
   right: 40px;
-  background: url('../../icons/star.svg') no-repeat 50% / auto;
+  background-image: url('../icons/star.svg');
 }
 
 .wrapper {
@@ -475,4 +470,20 @@ label {
 .nocolor {
   grid-row: 3 / 3;
   margin-top: 32px;
+}
+
+.home::before {
+  display: flex;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../icons/home_link.svg");
+}
+
+.arrow::before {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 10px;
+  background-image: url("../icons/arrow.svg");
 }
