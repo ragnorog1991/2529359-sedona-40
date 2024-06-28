@@ -5,7 +5,7 @@
   &__wrapper {
     display: grid;
     min-height: 412px;
-    background-color: #000;
+    background-color: #54606c;
     background: url('../img/background/bg_filter.jpg') no-repeat 100% / cover;
     justify-content: center;
     padding: 35px 70px 70px 70px;
@@ -63,7 +63,7 @@
           color: rgb(255, 255, 255);
           font-size: 20px;
           font-weight: 700;
-          line-height: 24px;
+          margin-bottom: 0;
         }
 
         &-list {
@@ -78,36 +78,41 @@
           }
         }
 
-        &-button {
-          display: grid;
-          width: 191px;
-          height: 36px;
-          align-self: center;
-          border-radius: 4px;
-          background: $main-color;
-          color: rgb(255, 255, 255);
-          font-size: 16px;
-          font-weight: 700;
-          text-align: center;
-          text-transform: uppercase;
-          align-content: center;
-          padding: 8px 50px 8px 50px;
-          border: none;
-        }
-
-        &-range {
-          width: 287px;
-          height: 20px;
-          border: rgb(255, 255, 255);
-
-        }
-
         &-price {
           display: flex;
           width: 286px;
         }
 
       }
+    }
+
+    &-right {
+      display: grid;
+      width: 549px;
+      min-height: 160px;
+      grid-template-columns: 288px 261px;
+      grid-template-rows: 68px 48px 56px;
+      column-gap: 70px;
+
+      &-button {
+        display: grid;
+        width: 191px;
+        height: 36px;
+        align-self: center;
+        border-radius: 4px;
+        background: $main-color;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        align-content: center;
+        padding: 8px 50px 8px 50px;
+        border: none;
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+      }
+
     }
 
   }
@@ -283,6 +288,7 @@
   border: none;
 }
 
+
 .price1 {
   width: 143px;
   height: 48px;
@@ -291,6 +297,7 @@
   padding: 12px 20px 12px 20px;
   font-size: 18px;
   font-weight: 700;
+  border: none;
 }
 
 .price2 {
@@ -301,6 +308,7 @@
   padding: 12px 20px 12px 20px;
   font-size: 18px;
   font-weight: 700;
+  border: none;
 }
 
 
@@ -436,4 +444,35 @@ label {
   margin-top: 26px;
   right: 40px;
   background: url('../../icons/star.svg') no-repeat 50% / auto;
+}
+
+.wrapper {
+  display: grid;
+  width: 288px;
+  height: 160px;
+  grid-template-columns: repeat(2, 143px);
+  grid-template-rows: 75px 48px 56px;
+  column-gap: 2px;
+
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+}
+
+.control1 {
+  grid-column: 1 / 1;
+}
+
+.range {
+  grid-column: 1 / 2;
+  width: 300px;
+  margin-top: 36px;
+}
+
+.nocolor {
+  grid-row: 3 / 3;
+  margin-top: 32px;
 }
