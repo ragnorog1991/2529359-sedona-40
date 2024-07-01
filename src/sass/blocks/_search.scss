@@ -36,5 +36,28 @@
     text-align: center;
     text-transform: uppercase;
     border: none;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+      background-color: #615048;
+      border: none;
+    }
+
+    &:focus {
+      background-color: #615048;
+      border: none;
+      outline: none;
+    }
+
+    &:active {
+      background-color: $second-color;
+      color: rgba(255, 255, 255, 0.3);
+      border: none;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: rgba(255, 255, 255, 0.1);
+    }
   }
 }

@@ -29,6 +29,32 @@
       font-size: 40px;
       font-weight: 400;
       line-height: 40px;
+
+      &:hover {
+        color: #756157;
+      }
+
+      &:focus {
+        color: #756157;
+      }
+
+      &:active {
+        color: rgba(117, 97, 87, 0.3);
+      }
+    }
+
+    &-logo {
+      &:hover {
+        fill: #756157;
+      }
+
+      &:focus {
+        fill: #756157;
+      }
+
+      &:active {
+        fill: rgba(117, 97, 87, 0.3);
+      }
     }
   }
 
@@ -39,8 +65,18 @@
     width: 47.33px;
     height: 40px;
     padding: 0px 10px 0px 10px;
+    fill: #83B3D3;
 
-    :active {
+    &:hover {
+      fill: #68A2CA;
+    }
+
+    &:focus {
+      fill: #68A2CA;
+    }
+
+    &:active {
+      fill: #68A2CA;
       opacity: 0.3;
     }
   }

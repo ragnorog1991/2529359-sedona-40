@@ -245,6 +245,26 @@
         margin-top: 16px;
         border-radius: 4px;
         align-content: center;
+
+        &:hover {
+          background-color: #68a2ca;
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:focus {
+          background-color: #68a2ca;
+        }
+
+        &:active {
+          background-color: $main-color;
+          outline: none;
+          color: rgba(255, 255, 255, 0.3);
+        }
+
+        &:disabled {
+          background-color: #e5e5e5;
+          color: rgba(255, 255, 255, 0.1);
+        }
       }
 
       &-rating {
@@ -285,7 +305,26 @@
 }
 
 .selected {
-  background-color: #7DB54F;
+  background-color: #7db54f;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #6c9e42;
+  }
+
+  &:focus {
+    background-color: #6c9e42;
+  }
+
+  &:active {
+    background-color: #7db54f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 
@@ -344,6 +383,25 @@ label {
 
 .brown {
   background-color: $second-color;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #615048;
+  }
+
+  &:focus {
+    background-color: #615048;
+  }
+
+  &:active {
+    background-color: $second-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .pagination {

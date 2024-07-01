@@ -24,18 +24,48 @@
   padding: 12px 20px 12px 20px;
   font-size: 18px;
   font-weight: 400;
+
+  &:active {
+    outline: none;
+  }
+
+  &:hover {
+    outline: none;
+  }
 }
 
-.subscribe__btn {
-  border: none;
-  border-radius: 0px 4px 4px 0px;
-  background: $main-color;
-  color: #fff;
-  width: 232px;
-  height: 52px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
+.subscribe {
+  &__btn {
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    background: $main-color;
+    color: #fff;
+    width: 232px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #68a2ca;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      background-color: #68a2ca;
+    }
+
+    &:active {
+      background-color: $main-color;
+      outline: none;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: rgba(255, 255, 255, 0.1);
+    }
+  }
 }
