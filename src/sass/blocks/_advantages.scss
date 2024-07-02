@@ -26,14 +26,13 @@
   &__block {
     display: grid;
     width: 400px;
-    height: 385px;
+    min-height: 385px;
     background: $main-color;
     justify-content: center;
     align-items: center;
 
     &-texts {
       width: 230px;
-      height: 181px;
       text-align: center;
 
       &-title {
@@ -46,12 +45,12 @@
       }
 
       &-line {
-        background: rgba(255, 255, 255, 0.3);
         width: 60px;
         height: 2px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.3);
         margin: 0 auto;
         margin-top: 30px;
-
       }
 
       &-subtitle {
