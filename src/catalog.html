@@ -66,11 +66,13 @@
             <header class="catalog__wrapper-header">
               <h1 class="catalog__wrapper-header-title">Гостиницы Седоны</h1>
               <ul class="catalog__wrapper-header-breadcrumbs">
-                <li class="catalog__wrapper-header-breadcrumbs-item home">
-                  <a class="breadcrumbs-link visually-hidden" href="./index.html">Домой</a>
+                <li class="catalog__wrapper-header-breadcrumbs-item">
+                  <div class="visually-hidden">Домой</div>
+                  <a class="breadcrumbs-link home" href="./index.html"></a>
                 </li>
-                <li class="catalog__wrapper-header-breadcrumbs-item arrow">
-                  <a class="breadcrumbs-link visually-hidden" href="#">Назад</a>
+                <li class="catalog__wrapper-header-breadcrumbs-item">
+                  <div class="visually-hidden">Назад</div>
+                  <a class="breadcrumbs-link arrow" href="#"></a>
                 </li>
                 <li class="catalog__wrapper-header-breadcrumbs-item">
                   <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -137,10 +139,10 @@
                 <div class="wrapper">
                   <p class="wrapper__title">Стоимость, ₽:</p>
                   <label class="control1">
-                    от <input type="number" name="price" class="price1" value="0">
+                    <input type="number" name="price" class="price1" value="0">
                   </label>
                   <label class="control2">
-                    до <input type="number" name="price" class="price2" value="9000">
+                    <input type="number" name="price" class="price2" value="9000">
                   </label>
                   <div class="range">
                     <div class="range-scale">
@@ -155,10 +157,10 @@
                     </div>
                     <div class="range-wrapper-inputs">
                       <label class="catalog-filter-label">
-                        от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                        <input class="range-input" type="number" value="50" name="min-price"> ₽
                       </label>
                       <label class="catalog-filter-label">
-                        до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                        <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
                       </label>
                     </div>
                   </div>
