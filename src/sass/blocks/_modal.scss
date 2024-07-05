@@ -74,10 +74,6 @@
   text-transform: uppercase;
 }
 
-.search-form .field-group {
-  margin-bottom: 48px;
-}
-
 .user-option {
   display: grid;
   grid-template-columns: 289px 288px;
@@ -125,6 +121,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0;
 
   &-form {
     &-field {
@@ -139,6 +136,7 @@
   position: relative;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 48px;
 }
 
 .person2 {
@@ -146,6 +144,7 @@
   position: relative;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 48px;
 
   &:before {
     content: "i";
@@ -203,16 +202,50 @@
   background-size: contain;
 }
 
-.plus {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.plus-adult {
   position: absolute;
-  right: 1px;
-  top: 1px;
+  right: 59px;
+  top: 9px;
   border: none;
 }
 
-.minus {
+.minus-adult {
   position: absolute;
-  right: 1px;
-  top: 1px;
+  right: 117px;
+  top: 10px;
   border: none;
+}
+
+.plus-child {
+  position: absolute;
+  right: 15px;
+  top: 9px;
+  border: none;
+}
+
+.minus-child {
+  position: absolute;
+  right: 76px;
+  top: 10px;
+  border: none;
+}
+
+.text-valid-error {
+  line-height: 131%;
+  color: #ff5757;
+  margin-left: 157px;
+  margin-bottom: 23px;
+}
+
+.text-valid-available {
+  line-height: 131%;
+  color: #333;
+  margin-bottom: 23px;
+  margin-left: 157px;
 }

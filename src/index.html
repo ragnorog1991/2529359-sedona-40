@@ -270,23 +270,41 @@
               <label class="visually-hidden" for="check-in"></label>
               <input class="check-form-field check-in" type="date" id="check-in" name="check-in" value="2020-04-27">
             </p>
+            <p class="text-valid-error">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group check">
               Дата выезда:
               <label class="visually-hidden" for="check-out"></label>
               <input class="check-form-field check-out" type="date" id="check-out" name="check-out" value="2021-09-01">
             </p>
+            <p class="text-valid-available">На эти даты есть свободные номера. Пока есть.</p>
             <div class="user-option">
               <p class="field-group person1">
                 Взрослые:
                 <label class="visually-hidden" for="adult"></label>
                 <input class="person-form-field adult" type="number" id="adult" name="adult" value="2">
-                <button class="plus"></button>
-                <button class="minus"></button>
+                <button class="plus-adult"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                    <path fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                </button>
+                <button class="minus-adult">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                    <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
+                  </svg>
+                </button>
               </p>
               <p class="field-group person2">
                 Дети:
                 <label class="visually-hidden" for="child"></label>
                 <input class="person-form-field child" type="number" id="child" name="child" value="2">
+                <button class="plus-child"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                    <path fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                </button>
+                <button class="minus-child">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                    <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
+                  </svg>
+                </button>
               </p>
               <button class="button search-form-button" type="submit">Найти</button>
             </div>
