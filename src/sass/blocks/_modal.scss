@@ -149,6 +149,7 @@
   &:before {
     content: "i";
     position: absolute;
+    text-transform: none;
     width: 26px;
     height: 26px;
     left: 109px;
@@ -248,4 +249,8 @@ input::-webkit-inner-spin-button {
   color: #333;
   margin-bottom: 23px;
   margin-left: 157px;
+}
+
+.modal-close {
+  display: none;
 }
