@@ -1,6 +1,8 @@
 .catalog {
   display: grid;
+  position: relative;
   min-height: 1647px;
+  z-index: 1;
 
   &__wrapper {
     display: grid;
