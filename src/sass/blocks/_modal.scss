@@ -239,3 +239,50 @@ input::-webkit-inner-spin-button {
 .modal-close {
   display: none;
 }
+
+.tooltip-toggle {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  left: 105px;
+}
+
+.tooltip-text {
+  display: block;
+  border-radius: 10px;
+  width: 256px;
+  min-height: 143px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  background: #333;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 22px 18px 18px;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  position: absolute;
+  top: 119%;
+  left: -5px;
+  display: none;
+}
+
+.tooltip {
+  margin-left: 2px;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url("../icons/triangle.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  transform: rotate(0deg);
+  top: -9px;
+  left: 114px;
+}
