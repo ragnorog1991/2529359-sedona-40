@@ -145,21 +145,6 @@
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 48px;
-
-  &:before {
-    content: "i";
-    position: absolute;
-    text-transform: none;
-    width: 26px;
-    height: 26px;
-    left: 109px;
-    top: 12px;
-    background-color: $main-color;
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    border-radius: 100%;
-  }
 }
 
 .adult {
