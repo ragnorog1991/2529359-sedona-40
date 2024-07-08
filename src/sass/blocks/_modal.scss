@@ -44,27 +44,27 @@
   border: none;
   cursor: pointer;
 
-  &:before {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: #000;
-    transform: rotate(45deg);
-    right: 18px;
+  &:hover {
+    background-color: #e6e6e6;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: #000;
-    transform: rotate(-45deg);
-    right: 18px;
+  &:focus {
+    background-color: #e6e6e6;
+    border: solid 3px $main-color;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #e6e6e6;
+    border: none;
   }
 }
 
+.modal-close-cross {
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .modal-title {
   margin: 0;
@@ -100,6 +100,28 @@
   line-height: 120%;
   text-transform: uppercase;
   color: #fff;
+
+  &:hover {
+    background-color: #68a2ca;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    background-color: #68a2ca;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $main-color;
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .field-group {
@@ -153,6 +175,16 @@
   font-size: 18px;
   line-height: 111%;
   text-align: center;
+
+  &:hover {
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    border: 3px solid $main-color;
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .child {
@@ -161,6 +193,16 @@
   font-size: 18px;
   line-height: 111%;
   text-align: center;
+
+  &:hover {
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    border: 3px solid $main-color;
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .check-in {
@@ -170,6 +212,16 @@
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
+
+  &:hover {
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    border: 3px solid $main-color;
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .check-out {
@@ -179,6 +231,16 @@
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
+
+  &:hover {
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    border: 3px solid $main-color;
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -199,6 +261,30 @@ input::-webkit-inner-spin-button {
   right: 59px;
   top: 9px;
   border: none;
+  background-color: transparent;
+}
+
+.plus-adult-icon {
+  fill: #756157;
+  opacity: .3;
+
+  &:hover {
+    fill: #000;
+    opacity: unset;
+  }
+
+  &:focus {
+    border: 3px solid #82b3d3;
+    opacity: unset;
+    outline: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:active {
+    opacity: .2;
+  }
 }
 
 .minus-adult {
@@ -206,6 +292,30 @@ input::-webkit-inner-spin-button {
   right: 117px;
   top: 10px;
   border: none;
+  background-color: transparent;
+}
+
+.minus-adult-icon {
+  fill: #756157;
+  opacity: .3;
+
+  &:hover {
+    fill: #000;
+    opacity: unset;
+  }
+
+  &:active {
+    opacity: .2;
+  }
+
+  &:focus {
+    border: 3px solid #82b3d3;
+    opacity: unset;
+    outline: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .plus-child {
@@ -213,6 +323,30 @@ input::-webkit-inner-spin-button {
   right: 15px;
   top: 9px;
   border: none;
+  background-color: transparent;
+}
+
+.plus-child-icon {
+  fill: #756157;
+  opacity: .3;
+
+  &:hover {
+    fill: #000;
+    opacity: unset;
+  }
+
+  &:focus {
+    border: 3px solid #82b3d3;
+    opacity: unset;
+    outline: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:active {
+    opacity: .2;
+  }
 }
 
 .minus-child {
@@ -220,6 +354,30 @@ input::-webkit-inner-spin-button {
   right: 76px;
   top: 10px;
   border: none;
+  background-color: transparent;
+}
+
+.minus-child-icon {
+  fill: #756157;
+  opacity: .3;
+
+  &:hover {
+    fill: #000;
+    opacity: unset;
+  }
+
+  &:focus {
+    border: 3px solid #82b3d3;
+    opacity: unset;
+    outline: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:active {
+    opacity: .2;
+  }
 }
 
 .text-valid-error {
@@ -234,10 +392,6 @@ input::-webkit-inner-spin-button {
   color: #333;
   margin-bottom: 23px;
   margin-left: 157px;
-}
-
-.modal-close {
-  display: none;
 }
 
 .tooltip-toggle {
@@ -285,4 +439,8 @@ input::-webkit-inner-spin-button {
   transform: rotate(0deg);
   top: -9px;
   left: 114px;
+}
+
+.modal-close {
+  display: none;
 }
