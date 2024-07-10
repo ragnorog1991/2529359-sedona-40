@@ -387,8 +387,12 @@
   font-weight: 700;
   border: none;
 
+  &:hover {
+    background: #e6e6e6;
+  }
+
   &:focus {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
   }
 
   &:active {
@@ -407,8 +411,17 @@
   font-weight: 700;
   border: none;
 
+  &:hover {
+    background: #e6e6e6;
+  }
+
   &:focus {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
   }
 }
 
@@ -682,7 +695,7 @@ label {
 
 .control-mark {
   &:focus {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
   }
 }
 

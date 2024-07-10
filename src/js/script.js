@@ -1,20 +1,12 @@
-const hamburger = document.querySelector('.modal__container'),
-  menu = document.querySelector('.modal__container'),
-  closeElem = document.querySelector('.modal-close-button');
+document.addEventListener('DOMContentLoaded', function () {
+  const searchHotelButton = document.querySelector('.search__btn');
+  const modal = document.querySelector('.modal__container');
+  const searchButtonClose = document.querySelector('.modal-close-button');
 
-hamburger.addEventListener('click', () => {
-
-  menu.classList.add('active');
-});
-
-closeElem.addEventListener('click', () => {
-
-  menu.classList.remove('active');
-});
-
-const counters = document.querySelectorAll(''),
-  lines = document.querySelectorAll('');
-
-counters.forEach((item, i) => {
-  lines[i].style.width = item.innerHTML;
+  searchHotelButton.addEventListener('click', function () {
+    modal.classList.remove('modal-close');
+  });
+  searchButtonClose.addEventListener('click', function () {
+    modal.classList.add('modal-close');
+  });
 });

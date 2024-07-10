@@ -42,8 +42,17 @@
         min-height: 64px;
         padding: 20px 16px 20px 16px;
 
+
         &:hover {
-          color: #000;
+          color: #756157;
+        }
+
+        &:focus {
+          color: #756157;
+        }
+
+        &:active {
+          color: rgba(117, 97, 87, 0.3);
         }
       }
     }
