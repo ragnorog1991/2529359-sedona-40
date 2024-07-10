@@ -219,7 +219,7 @@
   }
 
   &:focus {
-    border: 3px solid $main-color;
+    outline: 3px solid $main-color;
     color: rgba(0, 0, 0, 0.6);
   }
 }
@@ -238,7 +238,7 @@
   }
 
   &:focus {
-    border: 3px solid $main-color;
+    outline: 3px solid $main-color;
     color: rgba(0, 0, 0, 0.6);
   }
 }
@@ -258,10 +258,22 @@ input::-webkit-inner-spin-button {
 
 .plus-adult {
   position: absolute;
-  right: 59px;
-  top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 56px;
+  top: 14px;
   border: none;
   background-color: transparent;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+
+  &:focus {
+    outline: 3px solid #82b3d3;
+    opacity: unset;
+    border-radius: 4px;
+  }
 }
 
 .plus-adult-icon {
@@ -273,26 +285,34 @@ input::-webkit-inner-spin-button {
     opacity: unset;
   }
 
-  &:focus {
-    border: 3px solid #82b3d3;
-    opacity: unset;
-    outline: none;
-    border-radius: 4px;
-    width: 20px;
-    height: 20px;
-  }
-
   &:active {
     opacity: .2;
+    outline: none;
+  }
+
+  &:focus {
+    fill: #000;
   }
 }
 
 .minus-adult {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 117px;
-  top: 10px;
+  top: 16px;
   border: none;
   background-color: transparent;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+
+  &:focus {
+    outline: 3px solid #82b3d3;
+    opacity: unset;
+    border-radius: 4px;
+  }
 }
 
 .minus-adult-icon {
@@ -320,10 +340,22 @@ input::-webkit-inner-spin-button {
 
 .plus-child {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 15px;
-  top: 9px;
+  top: 14px;
   border: none;
   background-color: transparent;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+
+  &:focus {
+    outline: 3px solid #82b3d3;
+    opacity: unset;
+    border-radius: 4px;
+  }
 }
 
 .plus-child-icon {
@@ -351,10 +383,22 @@ input::-webkit-inner-spin-button {
 
 .minus-child {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 76px;
-  top: 10px;
+  top: 16px;
   border: none;
   background-color: transparent;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+
+  &:focus {
+    outline: 3px solid #82b3d3;
+    opacity: unset;
+    border-radius: 4px;
+  }
 }
 
 .minus-child-icon {
@@ -364,15 +408,6 @@ input::-webkit-inner-spin-button {
   &:hover {
     fill: #000;
     opacity: unset;
-  }
-
-  &:focus {
-    border: 3px solid #82b3d3;
-    opacity: unset;
-    outline: none;
-    border-radius: 4px;
-    width: 20px;
-    height: 20px;
   }
 
   &:active {
