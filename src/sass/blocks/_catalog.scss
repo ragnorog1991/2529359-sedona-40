@@ -641,14 +641,15 @@ label {
 }
 
 .control1 {
+  position: relative;
   grid-column: 1 / 1;
 }
 
-.range {
-  grid-column: 1 / 2;
-  width: 300px;
-  margin-top: 43px;
+.control2 {
+  position: relative;
+  grid-column: 2 / 2;
 }
+
 
 .nocolor {
   grid-row: 3 / 3;
@@ -753,16 +754,23 @@ label {
   border-radius: 100%;
 }
 
+.range {
+  grid-column: 1 / 2;
+  width: 288px;
+  margin-top: 43px;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: #fff;
+  background: rgb(255 255 255 / .2);
 }
 
 
 .range-bar {
   position: absolute;
   height: 4px;
+  background: #fff;
 }
 
 .range-toggle {
@@ -778,14 +786,30 @@ label {
 
 .toggle-min {
   top: -8px;
-  left: -42px;
+  left: -1px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -60px;
+  right: -19px;
 }
 
 .range-wrapper-inputs {
   display: none;
+}
+
+.price1-text {
+  position: absolute;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  right: 20px;
+  top: 10px;
+}
+
+.price2-text {
+  position: absolute;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  right: 20px;
+  top: 10px;
 }
