@@ -787,11 +787,37 @@ label {
 .toggle-min {
   top: -8px;
   left: -1px;
+
+  &:hover {
+    background: #e6e6e6;
+  }
+
+  &:focus {
+    outline: 3px solid #83b3d3;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+  }
 }
 
 .toggle-max {
   top: -8px;
   right: -19px;
+
+  &:hover {
+    background: #e6e6e6;
+  }
+
+  &:focus {
+    outline: 3px solid #83b3d3;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+  }
 }
 
 .range-wrapper-inputs {
