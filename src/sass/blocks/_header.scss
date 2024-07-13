@@ -12,6 +12,17 @@
     &-link {
       position: relative;
 
+      &:hover {
+        opacity: .6;
+        z-index: 2;
+      }
+
+      &:focus {
+        height: 80px;
+        outline: 2px solid #000;
+        z-index: 2;
+      }
+
       &-img {
         position: relative;
         margin-right: 12px;
@@ -24,7 +35,6 @@
       align-self: center;
       list-style-type: none;
       min-width: 354px;
-      margin-top: 3px;
       flex-wrap: wrap;
 
 
@@ -33,6 +43,9 @@
         margin: 0 auto;
         align-self: center;
 
+        &:active {
+          outline: none;
+        }
       }
 
       &-link {
@@ -40,10 +53,9 @@
         color: rgb(0, 0, 0);
         font-size: 20px;
         font-weight: 700;
-        min-width: 99px;
-        min-height: 76px;
-        padding: 20px 16px 20px 16px;
-
+        min-width: 100px;
+        min-height: 64px;
+        padding: 20px 16px;
 
         &:hover {
           color: #756157;
@@ -51,11 +63,15 @@
 
         &:focus {
           color: #756157;
+          outline: 2px solid #000;
+          z-index: 2;
         }
 
         &:active {
           color: rgba(117, 97, 87, 0.3);
+          outline: none;
         }
+
       }
     }
   }
@@ -115,10 +131,6 @@
 
 
       &-link {
-        display: block;
-        position: absolute;
-        top: -5px;
-        right: 46px;
         color: #fff;
         font-size: 16px;
         font-weight: 700;
@@ -127,7 +139,17 @@
         width: 44px;
         height: 63px;
         padding: 17px 12px 17px 12px;
+
+        &:hover {
+          opacity: .6;
+        }
+
+        &:focus {
+          outline: 2px solid #000;
+          z-index: 2;
+        }
       }
+
     }
 
   }
@@ -150,8 +172,8 @@ a:hover {
   content: "";
   width: 18px;
   height: 18px;
-  left: 13px;
-  top: 27px;
+  left: 11px;
+  top: 22px;
   background-image: url("../icons/search.svg");
 }
 
@@ -161,8 +183,8 @@ a:hover {
   content: "";
   width: 18px;
   height: 17px;
-  left: 57px;
-  top: 27px;
+  left: 54px;
+  top: 23px;
   background-image: url("../icons/like.svg");
 }
 
@@ -174,7 +196,7 @@ a:hover {
   min-height: 20px;
   right: 7px;
   top: 10px;
-  z-index: 2;
+  z-index: 3;
   justify-content: center;
   align-items: center;
   border-radius: 100vh;

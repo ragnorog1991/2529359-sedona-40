@@ -688,15 +688,15 @@ label {
   }
 }
 
+
+.control-input:focus+.control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+
 .control-mark {
   &:hover {
     opacity: 0.6;
-  }
-}
-
-.control-mark {
-  &:focus {
-    outline: 3px solid #83b3d3;
   }
 }
 
@@ -753,6 +753,7 @@ label {
   background: #3F5E72;
   border-radius: 100%;
 }
+
 
 .range {
   grid-column: 1 / 2;
