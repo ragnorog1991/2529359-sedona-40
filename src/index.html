@@ -285,13 +285,32 @@
             <p class="field-group check">
               Дата заезда:
               <label class="visually-hidden" for="check-in"></label>
-              <input class="check-form-field check-in" type="date" id="check-in" name="check-in" value="2020-04-27">
+              <svg class="modal-calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                <g fill="#000" opacity=".3">
+                  <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
+                  <path
+                    d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" />
+                  <path
+                    d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+              <input class="check-form-field check-in" type="text" id="check-in" name="check-in" value="27 апреля 2020">
             </p>
             <p class="text-valid-error">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group check">
               Дата выезда:
               <label class="visually-hidden" for="check-out"></label>
-              <input class="check-form-field check-out" type="date" id="check-out" name="check-out" value="2021-09-01">
+              <svg class="modal-calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                <g fill="#000" opacity=".3">
+                  <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
+                  <path
+                    d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" />
+                  <path
+                    d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+              <input class="check-form-field check-out" type="text" id="check-out" name="check-out"
+                value="1 сентября 2023">
             </p>
             <p class="text-valid-available">На эти даты есть свободные номера. Пока есть.</p>
             <div class="user-option">
@@ -299,14 +318,14 @@
                 Взрослые:
                 <label class="visually-hidden" for="adult"></label>
                 <input class="person-form-field adult" type="number" id="adult" name="adult" value="2">
-                <button class="plus-adult">
-                  <svg class="plus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
-                  </svg>
-                </button>
                 <button class="minus-adult">
                   <svg class="minus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                </button>
+                <button class="plus-adult">
+                  <svg class="plus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
               </p>
@@ -330,14 +349,14 @@
                   </span>
                 </span>
                 <input class="person-form-field child" type="number" id="child" name="child" value="2">
-                <button class="plus-child">
-                  <svg class="plus-child-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
-                  </svg>
-                </button>
                 <button class="minus-child">
                   <svg class="minus-child-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                </button>
+                <button class="plus-child">
+                  <svg class="plus-child-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
               </p>

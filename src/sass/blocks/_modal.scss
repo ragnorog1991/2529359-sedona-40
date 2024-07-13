@@ -141,6 +141,7 @@
 
 .check {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0;
@@ -241,13 +242,6 @@
     outline: 3px solid $main-color;
     color: rgba(0, 0, 0, 0.6);
   }
-}
-
-::-webkit-calendar-picker-indicator {
-  color: transparent;
-  opacity: 1;
-  background: url(../icons/date.svg) no-repeat center;
-  background-size: contain;
 }
 
 input::-webkit-outer-spin-button,
@@ -474,6 +468,11 @@ input::-webkit-inner-spin-button {
   transform: rotate(0deg);
   top: -9px;
   left: 114px;
+}
+
+.modal-calendar {
+  position: absolute;
+  right: 20px;
 }
 
 .modal-close {
