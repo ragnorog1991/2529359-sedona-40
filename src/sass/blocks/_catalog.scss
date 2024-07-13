@@ -175,10 +175,11 @@
       }
 
       :focus {
-
-        border: 2px solid rgb(104, 162, 202);
-        border-radius: 4px;
+        outline: 2px solid #68a2ca;
+        border: none;
       }
+
+
 
       :last-child {
         margin-right: 0;
@@ -205,8 +206,8 @@
         }
 
         :focus {
-          border: #68a2ca;
-          border-radius: 0;
+          outline: 2px solid #68a2ca;
+          border: none;
         }
 
       }
@@ -341,6 +342,7 @@
   }
 
   &:focus {
+    outline: 3px solid #82b3d3;
     background: none;
   }
 
@@ -434,6 +436,10 @@ input[type=radio] {
   background-color: #fff;
   width: 20px;
   height: 20px;
+}
+
+.control-input:focus+.control-mark {
+  border: 3px solid #83b3d3;
 }
 
 label {
@@ -686,11 +692,6 @@ label {
     border-radius: 4px;
     background: rgb(255, 255, 255);
   }
-}
-
-
-.control-input:focus+.control-mark {
-  outline: 3px solid #83b3d3;
 }
 
 

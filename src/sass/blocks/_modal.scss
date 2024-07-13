@@ -183,7 +183,7 @@
   }
 
   &:focus {
-    border: 3px solid $main-color;
+    outline: 3px solid $main-color;
     color: rgba(0, 0, 0, 0.6);
   }
 }
@@ -201,7 +201,7 @@
   }
 
   &:focus {
-    border: 3px solid $main-color;
+    outline: 3px solid $main-color;
     color: rgba(0, 0, 0, 0.6);
   }
 }
@@ -213,7 +213,7 @@
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0);
 
   &:hover {
     background: #e6e6e6;
@@ -224,6 +224,10 @@
     outline: 3px solid $main-color;
     color: rgba(0, 0, 0, 0.6);
   }
+
+  &:active {
+    color: #000;
+  }
 }
 
 .check-out {
@@ -233,7 +237,7 @@
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0);
 
   &:hover {
     background: #e6e6e6;
@@ -332,6 +336,12 @@ input::-webkit-inner-spin-button {
     width: 20px;
     height: 20px;
   }
+}
+
+.minus-adult:focus+.minus-adult-icon {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+  fill: #000;
 }
 
 .plus-child {
