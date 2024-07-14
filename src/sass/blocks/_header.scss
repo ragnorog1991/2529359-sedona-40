@@ -17,7 +17,7 @@
         z-index: 2;
       }
 
-      &:focus {
+      &:focus-visible {
         height: 80px;
         outline: 2px solid #000;
         z-index: 2;
@@ -61,7 +61,7 @@
           color: #756157;
         }
 
-        &:focus {
+        &:focus-visible {
           color: #756157;
           outline: 2px solid #000;
           z-index: 2;
@@ -144,7 +144,7 @@
           opacity: .6;
         }
 
-        &:focus {
+        &:focus-visible {
           outline: 2px solid #000;
           z-index: 2;
         }
