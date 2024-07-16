@@ -9,12 +9,18 @@
     min-height: 412px;
     background-color: #54606c;
     background: url('../img/background/bg_filter.jpg') no-repeat 100% / cover;
-    justify-content: center;
     padding: 35px 70px 70px 70px;
 
+    &-left {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      column-gap: 70px;
+      align-self: flex-end;
+    }
+
     &-header {
-      width: 1060px;
-      height: 107px;
+      max-width: 1060px;
+      min-height: 107px;
 
       &-title {
         color: rgb(255, 255, 255);
@@ -55,32 +61,29 @@
 
     &-form {
       display: grid;
-      width: 1060px;
-      grid-template-columns: 151px 151px 288px 191px;
-      column-gap: 70px;
+      max-width: 1060px;
+      grid-template-columns: 370px 549px;
       justify-content: space-between;
 
       &-group {
         display: grid;
         width: 288px;
-        justify-content: space-between;
 
         &-title {
           color: rgb(255, 255, 255);
           font-size: 20px;
           font-weight: 700;
-          margin-bottom: 0;
+          margin-bottom: 29px;
         }
 
         &-list {
           list-style-type: none;
-          margin-top: 32px;
 
           &-item {
             color: rgb(255, 255, 255);
             font-size: 18px;
             font-weight: 400;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
           }
         }
 
@@ -94,11 +97,12 @@
 
     &-right {
       display: grid;
-      width: 549px;
+      max-width: 549px;
       min-height: 160px;
       grid-template-columns: 288px 261px;
-      grid-template-rows: 68px 48px 56px;
+      grid-template-rows: 65px 59px 56px;
       column-gap: 70px;
+      align-self: flex-end;
 
       &-button {
         display: grid;
@@ -455,7 +459,7 @@ label {
   font-weight: 400;
   width: 292px;
   height: 49px;
-  padding: 10px 20px 10px 20px;
+  padding: 8px 20px 9px 14px;
   margin-right: auto;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
@@ -642,6 +646,8 @@ label {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 700;
+    align-self: center;
+    margin-top: 5px;
   }
 
 }
@@ -659,7 +665,7 @@ label {
 
 .nocolor {
   grid-row: 3 / 3;
-  margin-top: 32px;
+  align-self: flex-end;
 }
 
 .home::before {
@@ -759,7 +765,8 @@ label {
 .range {
   grid-column: 1 / 2;
   width: 288px;
-  margin-top: 43px;
+  align-self: flex-end;
+  margin-bottom: 7px;
 }
 
 .range-scale {

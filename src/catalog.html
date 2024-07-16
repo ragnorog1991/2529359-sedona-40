@@ -98,59 +98,61 @@
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <!-- Форма отвечающая за все кнопки фильтрации гостиниц на странице -->
             <form class="catalog__wrapper-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog__wrapper-form-group">
-                <p class="catalog__wrapper-form-group-title">Инфраструктура:</p>
-                <ul class="catalog__wrapper-form-group-list">
-                  <li class="catalog__wrapper-form-group-list-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="catalog__wrapper-form-group-list-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Парковка</span>
-                    </label>
-                  </li>
-                  <li class="catalog__wrapper-form-group-list-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="catalog__wrapper-left">
+                <fieldset class="catalog__wrapper-form-group">
+                  <p class="catalog__wrapper-form-group-title">Инфраструктура:</p>
+                  <ul class="catalog__wrapper-form-group-list">
+                    <li class="catalog__wrapper-form-group-list-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
+                      </label>
+                    </li>
+                    <li class="catalog__wrapper-form-group-list-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
+                      </label>
+                    </li>
+                    <li class="catalog__wrapper-form-group-list-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
 
-              <fieldset class="catalog__wrapper-form-group">
-                <p class="catalog__wrapper-form-group-title">Тип жилья:</p>
-                <ul class="catalog__wrapper-form-group-list">
-                  <li class="catalog__wrapper-form-group-list-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" value="Гостиница" name="hotel-group" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="catalog__wrapper-form-group-list-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" value="Мотель" name="hotel-group">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Мотель</span>
-                    </label>
-                  </li>
-                  <li class="catalog__wrapper-form-group-list-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" value="Апартаменты" name="hotel-group">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                <fieldset class="catalog__wrapper-form-group">
+                  <p class="catalog__wrapper-form-group-title">Тип жилья:</p>
+                  <ul class="catalog__wrapper-form-group-list">
+                    <li class="catalog__wrapper-form-group-list-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" value="Гостиница" name="hotel-group" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="catalog__wrapper-form-group-list-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" value="Мотель" name="hotel-group">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
+                      </label>
+                    </li>
+                    <li class="catalog__wrapper-form-group-list-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" value="Апартаменты" name="hotel-group">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
               <div class="catalog__wrapper-right">
                 <div class="wrapper">
                   <p class="wrapper__title">Стоимость, ₽:</p>
