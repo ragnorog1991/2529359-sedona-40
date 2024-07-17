@@ -54,10 +54,10 @@
           &:active {
             opacity: 0.3;
           }
+
         }
       }
     }
-
 
     &-form {
       display: grid;
@@ -221,7 +221,6 @@
 
   &__container {
     display: grid;
-    min-height: 985px;
     margin-top: 40px;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 70px 0px 70px;
@@ -229,14 +228,9 @@
 
 
     &-card {
-      display: grid;
       padding: 20px;
       width: 340px;
       min-height: 438px;
-      justify-content: center;
-      grid-template-columns: repeat(2, 140px);
-      grid-template-rows: min-content;
-      column-gap: 20px;
       border: 1px solid rgb(230, 230, 230);
       border-radius: 4px;
 
@@ -276,18 +270,16 @@
 
       &-button {
         text-align: center;
-        max-width: 140px;
+        min-width: 140px;
         min-height: 36px;
         background-color: $main-color;
         color: rgb(255, 255, 255);
         font-size: 16px;
         font-weight: 700;
-        align-self: flex-start;
         text-transform: uppercase;
         border-radius: 4px;
         align-content: center;
         word-wrap: break-word;
-        margin-bottom: 11px;
 
         &:hover {
           background-color: #68a2ca;
@@ -313,11 +305,12 @@
       &-rating {
         display: flex;
         width: 140px;
-        height: 37px;
+        min-height: 37px;
         background: rgb(242, 242, 242);
         border-radius: 4px;
         justify-content: center;
         align-items: center;
+        margin-top: 17px;
 
 
         &-text {
@@ -334,11 +327,26 @@
 
     &-stars {
       position: relative;
-      display: flex;
-      justify-content: flex-start;
+      margin-top: 16px;
 
     }
   }
+}
+
+.wrapper-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-rating {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 }
 
 .nocolor {
@@ -437,7 +445,14 @@
 
 input[type=checkbox],
 input[type=radio] {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .control-input {
@@ -447,7 +462,7 @@ input[type=radio] {
 }
 
 .control-input:focus+.control-mark {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 label {
@@ -527,7 +542,8 @@ select::-ms-expand {
   width: 1060px;
   height: 60px;
   column-gap: 8px;
-  margin-top: 40px;
+  margin: 0 auto;
+  margin-top: 34px;
 
   &-link {
     display: flex;
@@ -606,53 +622,13 @@ select::-ms-expand {
   border: 1px solid rgb(230, 230, 230);
 }
 
-.square1::before {
-  position: absolute;
+.rating-stars:before {
   content: "";
-  width: 18px;
-  height: 17px;
-  margin-top: 26px;
-  background-image: url('../icons/star.svg');
-}
-
-.square2::before {
   position: absolute;
-  content: "";
-  width: 18px;
-  height: 17px;
-  margin-top: 26px;
-  right: 100px;
-  background-image: url('../icons/star.svg');
-}
-
-.square3::before {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 17px;
-  margin-top: 26px;
-  right: 80px;
-  background-image: url('../icons/star.svg');
-}
-
-.square4::before {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 17px;
-  margin-top: 26px;
-  right: 60px;
-  background-image: url('../icons/star.svg');
-}
-
-.square5::before {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 17px;
-  margin-top: 26px;
-  right: 40px;
-  background-image: url('../icons/star.svg');
+  display: block;
+  width: 140px;
+  height: 37px;
+  background: url('../icons/stars.svg');
 }
 
 .wrapper {
