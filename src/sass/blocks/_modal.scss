@@ -35,7 +35,7 @@
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
+  top: 64px;
   right: 51px;
   width: 52px;
   height: 52px;
@@ -176,6 +176,7 @@
   font-size: 18px;
   line-height: 111%;
   text-align: center;
+  margin-top: 4px;
 
   &:hover {
     background: #e6e6e6;
@@ -194,6 +195,7 @@
   font-size: 18px;
   line-height: 111%;
   text-align: center;
+  margin-top: 7px;
 
   &:hover {
     background: #e6e6e6;
@@ -238,6 +240,7 @@
   background-color: #f2f2f2;
   border-radius: 4px;
   color: rgba(0, 0, 0);
+  margin-top: 3px;
 
   &:hover {
     background: #e6e6e6;
@@ -256,13 +259,23 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
 .plus-adult {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 56px;
-  top: 14px;
+  right: 52px;
+  top: 20px;
   border: none;
   background-color: transparent;
   border-radius: 4px;
@@ -300,8 +313,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 117px;
-  top: 16px;
+  right: 123px;
+  top: 21px;
   border: none;
   background-color: transparent;
   border-radius: 4px;
@@ -349,8 +362,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 15px;
-  top: 14px;
+  right: 10px;
+  top: 21px;
   border: none;
   background-color: transparent;
   border-radius: 4px;
@@ -392,8 +405,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 76px;
-  top: 16px;
+  right: 81px;
+  top: 21px;
   border: none;
   background-color: transparent;
   border-radius: 4px;
@@ -431,7 +444,7 @@ input::-webkit-inner-spin-button {
 .text-valid-available {
   line-height: 131%;
   color: #333;
-  margin-bottom: 23px;
+  margin-top: 5px;
   margin-left: 157px;
 }
 
@@ -439,7 +452,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 10px;
+  top: 17px;
   left: 105px;
 }
 
@@ -452,13 +465,13 @@ input::-webkit-inner-spin-button {
   background: #333;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 22px 18px 18px;
+  padding: 18px 22px 18px 18px;
   font-size: 16px;
   line-height: 125%;
   color: #fff;
   position: absolute;
-  top: 119%;
-  left: -5px;
+  top: 109%;
+  left: -10px;
   display: none;
 }
 
@@ -479,7 +492,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   transform: rotate(0deg);
   top: -9px;
-  left: 114px;
+  left: 118px;
 }
 
 .modal-calendar {
