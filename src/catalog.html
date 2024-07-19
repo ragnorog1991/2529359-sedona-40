@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <header class="page_header">
+    <header class="page_header" data-test="header">
       <div class="container">
         <nav class="navigation">
           <div class="navigation__container">
@@ -75,12 +75,12 @@
       </div>
     </header>
 
-    <main class="main-inner">
-      <section class="catalog">
+    <main class="main-inner" data-test="main">
+      <section class="catalog" data-test="catalog">
         <div class="container">
           <!-- Обертка отвечающая за весь блок Фильтр. Все содержимое внутри бэкграунда -->
           <div class="catalog__wrapper">
-            <header class="catalog__wrapper-header">
+            <header class="catalog__wrapper-header" data-test="header">
               <h1 class="catalog__wrapper-header-title">Гостиницы Седоны</h1>
               <ul class="catalog__wrapper-header-breadcrumbs">
                 <li class="catalog__wrapper-header-breadcrumbs-item">
@@ -478,7 +478,7 @@
 
     </main>
 
-    <section class="subscribe nobackground">
+    <section class="subscribe nobackground" data-test="subscribe">
       <div class="container">
         <h2 class="subscribe__title title_fz30">Подпишитесь на рассылку</h2>
         <p class="subscribe__descr title_fz22">
@@ -496,7 +496,7 @@
       </div>
     </section>
     </main>
-    <footer class="social">
+    <footer class="social" data-test="footer">
       <div class="social__wrapper">
         <ul class="social__wrapper-list">
           <li class="social__wrapper-list-item">

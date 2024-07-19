@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-self: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 9px;
 
     &-link {
@@ -23,6 +24,7 @@
       min-width: 120px;
       justify-content: space-evenly;
       list-style-type: none;
+      flex-wrap: wrap;
     }
 
     &-phone {
