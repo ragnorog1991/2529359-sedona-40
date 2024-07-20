@@ -33,10 +33,11 @@
       &-breadcrumbs {
         display: flex;
         width: 114px;
-        height: 21px;
+        min-height: 21px;
         list-style-type: none;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         :last-child {
           color: rgb(255, 255, 255);
@@ -107,7 +108,7 @@
       &-button {
         display: grid;
         width: 191px;
-        height: 36px;
+        min-height: 36px;
         align-self: center;
         border-radius: 4px;
         background: $main-color;
@@ -152,9 +153,10 @@
   &__sort {
     display: flex;
     width: 1060px;
-    height: 49px;
+    min-height: 49px;
     justify-content: space-between;
     margin: 50px 70px 0 70px;
+    flex-wrap: wrap;
 
     &-title {
       font-size: 30px;
@@ -167,7 +169,8 @@
       display: flex;
       min-width: 522px;
       min-height: 49px;
-      justify-content: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
 
       :hover {
         border: 2px solid rgb(0, 0, 0);
@@ -221,7 +224,7 @@
 
   &__container {
     display: grid;
-    margin-top: 40px;
+    margin-top: 35px;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 70px 0px 70px;
     gap: 20px;
@@ -270,6 +273,7 @@
 
       &-button {
         text-align: center;
+        padding: 6px 10px;
         min-width: 140px;
         min-height: 36px;
         background-color: $main-color;
@@ -306,6 +310,7 @@
         display: flex;
         width: 140px;
         min-height: 37px;
+        padding: 9px 22px 8px 23px;
         background: rgb(242, 242, 242);
         border-radius: 4px;
         justify-content: center;
@@ -531,15 +536,16 @@ label {
 .pagination {
   display: flex;
   width: 1060px;
-  height: 60px;
+  min-height: 60px;
   column-gap: 8px;
   margin: 0 auto;
   margin-top: 34px;
 
   &-link {
     display: flex;
-    width: 60px;
+    min-width: 60px;
     min-height: 60px;
+    padding: 11px 24px 12px 23px;
     background-color: $main-color;
     color: #fff;
     font-size: 20px;
@@ -566,8 +572,9 @@ label {
 
     &_current {
       display: flex;
-      width: 60px;
-      height: 60px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 11px 24px 12px 23px;
       background-color: #F2F2F2;
       color: #000;
       font-size: 20px;
@@ -595,8 +602,9 @@ label {
 
     &_expand {
       display: flex;
-      width: 60px;
-      height: 60px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 11px 24px 12px 23px;
       background-color: none;
       align-items: center;
       justify-content: center;
@@ -625,7 +633,7 @@ label {
 .wrapper {
   display: grid;
   width: 288px;
-  height: 160px;
+  min-height: 160px;
   grid-template-columns: repeat(2, 143px);
   grid-template-rows: 75px 48px 56px;
   column-gap: 2px;
