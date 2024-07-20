@@ -475,7 +475,8 @@ label {
 }
 
 .nobackground {
-  background: none;
+  background: #fff;
+  box-shadow: 0 13px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .select-control {
@@ -539,7 +540,7 @@ label {
   min-height: 60px;
   column-gap: 8px;
   margin: 0 auto;
-  margin-top: 34px;
+  margin-top: 38px;
 
   &-link {
     display: flex;
@@ -617,8 +618,12 @@ label {
 }
 
 .divider {
-  margin-top: 41px;
-  border: 1px solid rgb(230, 230, 230);
+  display: block;
+  width: 1060px;
+  height: 0px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid #e6e6e6;
 }
 
 .rating-stars:before {

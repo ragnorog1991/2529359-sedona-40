@@ -53,8 +53,25 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+.pages-backgroud {
+  display: block;
+  padding: 0px 40px;
+  width: 1280px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  z-index: 0;
+}
+
 .main-index {
   flex-grow: 1;
+  background: #fff;
+  box-shadow: 0 8 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-inner {
+  flex-grow: 1;
+  background: #fff;
+  box-shadow: 0 8 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 
