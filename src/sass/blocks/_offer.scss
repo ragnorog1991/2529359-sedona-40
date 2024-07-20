@@ -31,7 +31,7 @@
       list-style-type: none;
       background: rgba(131, 179, 211, 0.12);
       width: 400px;
-      height: 385px;
+      min-height: 385px;
       padding: 80px 85px 80px 85px;
 
       &-wrapper {
@@ -40,7 +40,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 230px;
-        height: 223px;
+        min-height: 223px;
 
         &-title {
           font-size: 24px;
