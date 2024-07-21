@@ -844,6 +844,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 150px);
   -moz-column-gap: 70px;
+  -webkit-column-gap: 70px;
   column-gap: 70px;
   align-self: flex-end
 }
@@ -931,6 +932,7 @@ footer {
   grid-template-columns: 288px 261px;
   grid-template-rows: 65px 59px 56px;
   -moz-column-gap: 70px;
+  -webkit-column-gap: 70px;
   column-gap: 70px;
   align-self: flex-end
 }
@@ -1353,6 +1355,7 @@ label {
   width: 1060px;
   min-height: 60px;
   -moz-column-gap: 8px;
+  -webkit-column-gap: 8px;
   column-gap: 8px;
   margin: 0 auto;
   margin-top: 38px
@@ -1457,6 +1460,7 @@ label {
   grid-template-columns: repeat(2, 143px);
   grid-template-rows: 75px 48px 56px;
   -moz-column-gap: 2px;
+  -webkit-column-gap: 2px;
   column-gap: 2px
 }
 
@@ -2108,7 +2112,6 @@ select::-ms-expand {
 }
 
 .tooltip-text {
-  display: block;
   border-radius: 10px;
   width: 256px;
   min-height: 143px;
