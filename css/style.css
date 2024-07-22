@@ -659,7 +659,7 @@ a:hover {
   width: 1200px;
   margin: 0 auto;
   background: url(../img/background/subscribe.jpg) no-repeat 50%/cover;
-  padding: 96px 0
+  padding: 95px 0
 }
 
 .subscribe__descr {
@@ -737,7 +737,7 @@ a:hover {
 
 footer {
   background: #fff;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .2)
 }
 
 .social {
@@ -1079,7 +1079,8 @@ footer {
 }
 
 .catalog__container-card-link {
-  display: grid
+  display: grid;
+  text-decoration: none;
 }
 
 .catalog__container-card-title {
@@ -1098,6 +1099,7 @@ footer {
 
 .catalog__container-card-descr {
   font-family: "PT Sans", sans-serif;
+  margin: 0;
   font-size: 18px;
   font-weight: 400;
   grid-column: 1/1;
@@ -1160,6 +1162,7 @@ footer {
   padding: 9px 22px 8px 23px;
   background: #f2f2f2;
   border-radius: 4px;
+  align-items: center;
 }
 
 .catalog__container-card-rating-text {
@@ -1171,8 +1174,9 @@ footer {
 }
 
 .catalog__container-stars {
+  display: flex;
   position: relative;
-  margin-top: 15px;
+  align-items: center;
 }
 
 .wrapper-price {
@@ -1182,13 +1186,15 @@ footer {
 
 .wrapper-button {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
 .wrapper-rating {
   display: flex;
   position: relative;
-  justify-content: space-between
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
 .nocolor {
@@ -1386,7 +1392,7 @@ label {
   display: flex;
   min-width: 60px;
   min-height: 60px;
-  padding: 11px 24px 12px 23px;
+  padding: 11px 16px 12px 11px;
   background-color: #82b3d3;
   color: #fff;
   font-size: 20px;
@@ -1449,8 +1455,8 @@ label {
   display: flex;
   min-width: 60px;
   min-height: 60px;
-  padding: 11px 24px 12px 23px;
-  background-color: none;
+  padding: 11px 22px 12px 23px;
+  background: none;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -1464,7 +1470,7 @@ label {
   width: 1060px;
   height: 0;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 37px;
   border: 1px solid #e6e6e6
 }
 
