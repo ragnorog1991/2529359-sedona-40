@@ -67,10 +67,6 @@ body {
   overflow: hidden
 }
 
-li:last-child {
-  margin-bottom: 0
-}
-
 .title {
   text-align: center
 }
@@ -237,8 +233,8 @@ li:last-child {
   min-width: 88px;
   list-style-type: none;
   color: #000;
-  margin-left: 289px;
-  margin-top: 1px;
+  margin-top: 0;
+  margin-left: 247px;
   margin-right: auto;
   flex-wrap: wrap
 }
@@ -249,6 +245,7 @@ li:last-child {
 }
 
 .navigation__user-item-link {
+  position: relative;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -268,9 +265,6 @@ li:last-child {
   z-index: 2
 }
 
-ul {
-  margin-bottom: 0
-}
 
 a:hover {
   text-decoration: none
@@ -282,8 +276,8 @@ a:hover {
   content: "";
   width: 18px;
   height: 18px;
-  left: 11px;
-  top: 22px;
+  left: 12px;
+  top: 23px;
   background-image: url(../icons/search.svg)
 }
 
@@ -293,7 +287,7 @@ a:hover {
   content: "";
   width: 18px;
   height: 17px;
-  left: 54px;
+  left: 12px;
   top: 23px;
   background-image: url(../icons/like.svg)
 }
@@ -304,8 +298,8 @@ a:hover {
   content: "12";
   min-width: 20px;
   min-height: 20px;
-  right: 24px;
-  top: 9px;
+  right: 5px;
+  top: 10px;
   z-index: 3;
   justify-content: center;
   align-items: center;
@@ -847,10 +841,12 @@ footer {
 .catalog__wrapper-left {
   display: grid;
   grid-template-columns: repeat(2, 150px);
-  -moz-column-gap: 70px;
-  -webkit-column-gap: 70px;
-  column-gap: 70px;
-  align-self: flex-end
+  grid-template-rows: 75px 68px;
+  margin-top: 40px;
+  -moz-column-gap: 72px;
+  -webkit-column-gap: 72px;
+  column-gap: 72px;
+  align-self: center;
 }
 
 .catalog__wrapper-header {
@@ -913,13 +909,14 @@ footer {
 }
 
 .catalog__wrapper-form-group-title {
+  margin: 0;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 29px
 }
 
 .catalog__wrapper-form-group-list {
+  margin: 0;
   padding: 0;
   list-style-type: none
 }
@@ -928,7 +925,7 @@ footer {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 12px
+  margin-top: 16px;
 }
 
 .catalog__wrapper-form-group-price {
@@ -1017,20 +1014,6 @@ footer {
   flex-wrap: wrap
 }
 
-.catalog__sort-wrapper :hover {
-  border: 2px solid #000;
-  border-radius: 4px
-}
-
-.catalog__sort-wrapper :active {
-  border: 2px solid #000;
-  border-radius: 4px
-}
-
-.catalog__sort-wrapper :focus {
-  outline: 2px solid #68a2ca;
-  border: none
-}
 
 .catalog__sort-wrapper :last-child {
   margin-right: 0
@@ -1047,17 +1030,16 @@ footer {
   margin-right: 8px
 }
 
-.catalog__sort-wrapper-button :hover {
+.catalog__sort-wrapper-button:hover {
+  outline: 2px solid #000;
   border: none;
-  border-radius: 0
 }
 
-.catalog__sort-wrapper-button :active {
+.catalog__sort-wrapper-button:active {
   border: none;
-  border-radius: 0
 }
 
-.catalog__sort-wrapper-button :focus {
+.catalog__sort-wrapper-button:focus {
   outline: 2px solid #68a2ca;
   border: none
 }
@@ -1335,11 +1317,11 @@ label {
 }
 
 .select-control:hover {
-  border: 2px solid #68a2ca
+  border: 2px solid #68a2ca;
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, .3);
+  outline: 2px solid rgba(0, 0, 0, .3);
   color: rgba(0, 0, 0, .3)
 }
 
@@ -1678,7 +1660,7 @@ label {
   font-size: 18px;
   color: rgba(0, 0, 0, .3);
   right: 20px;
-  top: 10px
+  top: 14px
 }
 
 .price2-text {
@@ -1686,7 +1668,7 @@ label {
   font-size: 18px;
   color: rgba(0, 0, 0, .3);
   right: 20px;
-  top: 10px
+  top: 14px
 }
 
 .modal {
@@ -1843,6 +1825,7 @@ label {
 
 .person1 {
   display: flex;
+  margin: 0;
   position: relative;
   align-items: center;
   justify-content: flex-start;
@@ -1851,6 +1834,7 @@ label {
 
 .person2 {
   display: flex;
+  margin: 0;
   position: relative;
   align-items: center;
   justify-content: flex-end;
@@ -2126,10 +2110,11 @@ select::-ms-expand {
 }
 
 .text-valid-error {
+  margin: 0;
+  margin-left: 157px;
+  margin-top: 3px;
   line-height: 131%;
   color: #ff5757;
-  margin-left: 157px;
-  margin-bottom: 23px
 }
 
 .text-valid-available {
@@ -2143,8 +2128,8 @@ select::-ms-expand {
   position: absolute;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  top: 17px;
-  left: 105px
+  top: 16px;
+  left: 98px
 }
 
 .tooltip-text {
@@ -2155,12 +2140,12 @@ select::-ms-expand {
   background: #333;
   font-weight: 400;
   text-transform: none;
-  padding: 18px 22px 18px 18px;
+  padding: 19px 22px 18px 21px;
   font-size: 16px;
   line-height: 125%;
   color: #fff;
   position: absolute;
-  top: 109%;
+  top: 107%;
   left: -10px;
   display: none
 }

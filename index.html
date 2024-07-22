@@ -310,7 +310,8 @@
             <p class="field-group check">
               Дата выезда:
               <label class="visually-hidden" for="check-out"></label>
-              <svg class="modal-calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+              <svg class="modal-calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="visible"
+                fill="none">
                 <g fill="#000" opacity=".3">
                   <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
                   <path
@@ -330,13 +331,15 @@
                 <input class="person-form-field adult" type="text" id="adult" name="adult" value="2">
                 <button class="minus-adult" type="button">
                   <div class="visually-hidden">кнопка минус</div>
-                  <svg class="minus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <path d="M3 9v2h14V9H3Z" />
+                  <svg width="14" height="2" viewBox="0 0 14 2" overflow="visible" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
                 <button class="plus-adult" type="button">
                   <div class="visually-hidden">кнопка плюс</div>
-                  <svg class="plus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                  <svg class="plus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    overflow="visible">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
@@ -347,7 +350,7 @@
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <div class="visually-hidden">кнопка подсказывает что нужно указать количество детей</div>
-                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" overflow="visible" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
@@ -364,13 +367,15 @@
                 <input class="person-form-field child" type="text" id="child" name="child" value="2">
                 <button class="minus-child" type="button">
                   <div class="visually-hidden">кнопка минус</div>
-                  <svg class="minus-child-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <svg class="minus-child-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    overflow="visible">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
                 <button class="plus-child" type="button">
                   <div class="visually-hidden">кнопка плюс</div>
-                  <svg class="plus-child-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                  <svg class="plus-child-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    overflow="visible">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
