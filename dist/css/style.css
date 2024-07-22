@@ -30,11 +30,6 @@ html {
   height: 100%
 }
 
-* {
-  margin: 0;
-  padding: 0
-}
-
 *,
 ::after,
 ::before {
@@ -43,30 +38,29 @@ html {
 
 body {
   display: flex;
+  margin: 0;
+  padding: 0;
   flex-direction: column;
   min-height: 100%;
+  background: #f2f2f2;
   font-family: "PT Sans", sans-serif
 }
 
-.pages-backgroud {
-  display: block;
-  padding: 0 40px;
-  width: 1280px;
-  margin: 0 auto;
-  background: #f2f2f2;
-  z-index: 0
-}
 
 .main-index {
-  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
   background: #fff;
-  box-shadow: 0 8 15px 0 rgba(0, 0, 0, .2)
+  flex-grow: 1;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .2)
 }
 
 .main-inner {
+  width: 1200px;
+  margin: 0 auto;
   flex-grow: 1;
   background: #fff;
-  box-shadow: 0 8 15px 0 rgba(0, 0, 0, .2)
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
 }
 
 .container {
@@ -94,6 +88,8 @@ li:last-child {
 }
 
 .title_fz30 {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
   color: #000;
   font-size: 30px;
   font-weight: 700;
@@ -103,6 +99,7 @@ li:last-child {
 }
 
 .title_fz22 {
+  font-family: "PT Sans", sans-serif;
   color: #333;
   font-size: 22px;
   font-weight: 400;
@@ -111,10 +108,13 @@ li:last-child {
 }
 
 .white-text {
+  margin: 0;
   color: #fff
 }
 
 .page_header {
+  width: 1200px;
+  margin: 0 auto;
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
 }
@@ -122,10 +122,9 @@ li:last-child {
 .navigation {
   position: relative;
   display: flex;
-  margin-right: 70px;
   margin-left: 70px;
-  min-height: 64px;
-  margin-bottom: -6px;
+  margin-right: 70px;
+  height: 64px;
   background: #fff
 }
 
@@ -150,15 +149,16 @@ li:last-child {
 
 .navigation__container-link-img {
   position: relative;
-  margin-right: 12px;
   z-index: 2
 }
 
 .navigation__container-list {
   display: flex;
+  margin: 0;
+  padding: 0;
   align-self: center;
   list-style-type: none;
-  min-width: 354px;
+  min-width: 394px;
   flex-wrap: wrap
 }
 
@@ -173,13 +173,15 @@ li:last-child {
 }
 
 .navigation__container-list-link {
+  font-family: "PT Sans", sans-serif;
   display: block;
   color: #000;
   font-size: 20px;
   font-weight: 700;
   min-width: 100px;
   min-height: 64px;
-  padding: 13px 16px
+  padding: 20px 16px;
+  text-decoration: none;
 }
 
 .navigation__container-list-link:hover {
@@ -203,8 +205,9 @@ li:last-child {
 }
 
 .navigation__wrapper-btn {
+  font-family: "PT Sans", sans-serif;
   padding: 8px 34px;
-  width: 160px;
+  min-width: 160px;
   min-height: 36px;
   border-radius: 4px;
   background: #756157;
@@ -216,7 +219,8 @@ li:last-child {
   text-align: center;
   text-transform: uppercase;
   align-self: center;
-  z-index: 3
+  z-index: 3;
+  text-decoration: none;
 }
 
 .navigation__wrapper-btn:hover {
@@ -244,7 +248,7 @@ li:last-child {
   min-width: 88px;
   list-style-type: none;
   color: #000;
-  margin-left: 289px;
+  margin-left: 261px;
   margin-top: 1px;
   margin-right: auto;
   flex-wrap: wrap
@@ -311,8 +315,8 @@ a:hover {
   content: "12";
   min-width: 20px;
   min-height: 20px;
-  right: 7px;
-  top: 10px;
+  right: 24px;
+  top: 9px;
   z-index: 3;
   justify-content: center;
   align-items: center;
@@ -323,16 +327,13 @@ a:hover {
   font-weight: 400
 }
 
-.current1 {
-  margin-left: 15px
-}
 
 .current::before {
   position: absolute;
   content: "";
   width: 68px;
   height: 0;
-  bottom: 4px;
+  bottom: -2px;
   left: 184px;
   border: 2px solid #756257
 }
@@ -342,7 +343,7 @@ a:hover {
   content: "";
   width: 93px;
   height: 0;
-  bottom: 4px;
+  bottom: -2px;
   left: 397px;
   border: 2px solid #756257
 }
@@ -380,6 +381,7 @@ a:hover {
 }
 
 .advantages__title {
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -389,6 +391,7 @@ a:hover {
 }
 
 .advantages__subtitle {
+  font-family: "PT Sans", sans-serif;
   color: #333;
   font-size: 22px;
   font-weight: 400;
@@ -499,6 +502,7 @@ a:hover {
 }
 
 .offer__title {
+  margin: 0;
   margin-top: 64px;
   font-size: 30px;
   font-weight: 700;
@@ -518,6 +522,7 @@ a:hover {
 
 .offer__list {
   display: flex;
+  padding: 0;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 64px
@@ -542,12 +547,13 @@ a:hover {
 }
 
 .offer__list-item-wrapper-title {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 10px
+  margin-top: 17px
 }
 
 .offer__list-item-wrapper-descr {
@@ -600,6 +606,7 @@ a:hover {
 }
 
 .search__title {
+  margin: 0;
   color: #000;
   font-size: 30px;
   font-weight: 700;
@@ -619,6 +626,7 @@ a:hover {
 }
 
 .search__btn {
+  font-family: "PT Sans", sans-serif;
   display: block;
   margin: 0 auto;
   margin-top: 54px;
@@ -666,6 +674,7 @@ a:hover {
 }
 
 .subscribe__descr {
+  font-family: "PT Sans", sans-serif;
   margin-top: 20px
 }
 
@@ -677,6 +686,7 @@ a:hover {
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
   border: none;
   border-radius: 4px 0 0 4px;
   background: #f2f2f2;
@@ -701,6 +711,7 @@ a:hover {
 }
 
 .subscribe__btn {
+  font-family: "PT Sans", sans-serif;
   border: none;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
@@ -737,7 +748,7 @@ a:hover {
 
 footer {
   background: #fff;
-  box-shadow: 0 13px 15px 0 rgba(0, 0, 0, .2)
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
 }
 
 .social {
@@ -764,6 +775,8 @@ footer {
 }
 
 .social__wrapper-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   min-width: 120px;
   justify-content: space-evenly;
@@ -772,10 +785,12 @@ footer {
 }
 
 .social__wrapper-phone {
+  font-family: "PT Sans", sans-serif;
   color: #000;
   font-size: 40px;
   font-weight: 400;
-  line-height: 40px
+  line-height: 40px;
+  text-decoration: none;
 }
 
 .social__wrapper-phone:hover {
@@ -855,6 +870,7 @@ footer {
 }
 
 .catalog__wrapper-header-title {
+  margin: 0;
   color: #fff;
   font-size: 60px;
   font-weight: 700;
@@ -863,6 +879,9 @@ footer {
 }
 
 .catalog__wrapper-header-breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
   display: flex;
   width: 114px;
   min-height: 21px;
@@ -874,12 +893,13 @@ footer {
 
 .catalog__wrapper-header-breadcrumbs :last-child {
   color: #fff;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0;
-  text-align: left
+  text-align: left;
+  text-decoration: none;
 }
 
 .catalog__wrapper-header-breadcrumbs :last-child:hover {
@@ -898,8 +918,11 @@ footer {
 }
 
 .catalog__wrapper-form-group {
+  margin: 0;
+  padding: 0;
   display: grid;
-  width: 288px
+  width: 288px;
+  border: none;
 }
 
 .catalog__wrapper-form-group-title {
@@ -910,6 +933,7 @@ footer {
 }
 
 .catalog__wrapper-form-group-list {
+  padding: 0;
   list-style-type: none
 }
 
@@ -938,6 +962,7 @@ footer {
 }
 
 .catalog__wrapper-right-button {
+  font-family: "PT Sans", sans-serif;
   display: grid;
   width: 191px;
   min-height: 36px;
@@ -988,6 +1013,9 @@ footer {
 }
 
 .catalog__sort-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase
@@ -1049,7 +1077,7 @@ footer {
 
 .catalog__container {
   display: grid;
-  margin-top: 35px;
+  margin-top: 40px;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 70px 0 70px;
   gap: 20px
@@ -1068,6 +1096,7 @@ footer {
 }
 
 .catalog__container-card-title {
+  font-family: "PT Sans", sans-serif;
   display: flex;
   color: #000;
   font-size: 24px;
@@ -1076,10 +1105,12 @@ footer {
   margin-top: 14px;
   grid-column: 1/2;
   margin-bottom: 0;
-  word-break: break-all
+  word-break: break-all;
+  text-decoration: none;
 }
 
 .catalog__container-card-descr {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   grid-column: 1/1;
@@ -1088,6 +1119,7 @@ footer {
 }
 
 .catalog__container-card-price {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-align: right;
@@ -1098,6 +1130,7 @@ footer {
 }
 
 .catalog__container-card-button {
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   padding: 6px 10px;
   min-width: 140px;
@@ -1109,7 +1142,8 @@ footer {
   text-transform: uppercase;
   border-radius: 4px;
   align-content: center;
-  word-wrap: break-word
+  word-wrap: break-word;
+  text-decoration: none;
 }
 
 .catalog__container-card-button:hover {
@@ -1139,9 +1173,6 @@ footer {
   padding: 9px 22px 8px 23px;
   background: #f2f2f2;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 17px
 }
 
 .catalog__container-card-rating-text {
@@ -1149,12 +1180,12 @@ footer {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 0
+  margin: 0;
 }
 
 .catalog__container-stars {
   position: relative;
-  margin-top: 16px
+  margin-top: 15px;
 }
 
 .wrapper-price {
@@ -1219,6 +1250,7 @@ footer {
 }
 
 .price1 {
+  font-family: "PT Sans", sans-serif;
   width: 143px;
   height: 48px;
   border-radius: 4px 0 0 4px;
@@ -1243,6 +1275,7 @@ footer {
 }
 
 .price2 {
+  font-family: "PT Sans", sans-serif;
   width: 143px;
   height: 48px;
   border-radius: 0 4px 4px 0;
@@ -1362,6 +1395,7 @@ label {
 }
 
 .pagination-link {
+  font-family: "PT Sans", sans-serif;
   display: flex;
   min-width: 60px;
   min-height: 60px;
@@ -1373,7 +1407,8 @@ label {
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-  border-radius: 4px
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .pagination-link:hover {
@@ -1403,7 +1438,9 @@ label {
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-  border-radius: 4px
+  border-radius: 4px;
+  text-decoration: none;
+
 }
 
 .pagination-link_current:hover {
@@ -1916,6 +1953,7 @@ input::-webkit-outer-spin-button {
 }
 
 select {
+  font-family: "PT Sans", sans-serif;
   -webkit-appearance: none;
   appearance: none
 }
