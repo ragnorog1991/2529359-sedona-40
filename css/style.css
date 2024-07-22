@@ -121,7 +121,8 @@ li:last-child {
 }
 
 .navigation__container-link {
-  position: relative
+  position: relative;
+  margin-right: 27px;
 }
 
 .navigation__container-link:hover {
@@ -146,7 +147,7 @@ li:last-child {
   padding: 0;
   align-self: center;
   list-style-type: none;
-  min-width: 394px;
+  min-width: 339px;
   flex-wrap: wrap
 }
 
@@ -236,7 +237,7 @@ li:last-child {
   min-width: 88px;
   list-style-type: none;
   color: #000;
-  margin-left: 261px;
+  margin-left: 289px;
   margin-top: 1px;
   margin-right: auto;
   flex-wrap: wrap
@@ -908,8 +909,6 @@ footer {
 .catalog__wrapper-form-group {
   margin: 0;
   padding: 0;
-  display: grid;
-  width: 288px;
   border: none;
 }
 
