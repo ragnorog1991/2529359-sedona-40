@@ -276,7 +276,6 @@
         </a>
       </div>
     </footer>
-    </div>
     <!-- Для появления модального окна необходимо удалить класс modal-close. Внизу страницы подключен скрипт, который это делает. Поэтому достаточно просто нажать на кнопку для появления модалки.-->
     <div class="modal__container modal-close">
       <div class="modal modal-search">
@@ -330,14 +329,12 @@
                 <label class="visually-hidden" for="adult"></label>
                 <input class="person-form-field adult" type="text" id="adult" name="adult" value="2">
                 <button class="minus-adult" type="button">
-                  <div class="visually-hidden">кнопка минус</div>
                   <svg width="14" height="2" viewBox="0 0 14 2" overflow="visible" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                   </svg>
                 </button>
                 <button class="plus-adult" type="button">
-                  <div class="visually-hidden">кнопка плюс</div>
                   <svg class="plus-adult-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                     overflow="visible">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
@@ -349,7 +346,6 @@
                 <label class="visually-hidden" for="child"></label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <div class="visually-hidden">кнопка подсказывает что нужно указать количество детей</div>
                     <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" overflow="visible" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
@@ -366,21 +362,19 @@
                 </span>
                 <input class="person-form-field child" type="text" id="child" name="child" value="2">
                 <button class="minus-child" type="button">
-                  <div class="visually-hidden">кнопка минус</div>
                   <svg class="minus-child-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     overflow="visible">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
                 <button class="plus-child" type="button">
-                  <div class="visually-hidden">кнопка плюс</div>
                   <svg class="plus-child-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                     overflow="visible">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
               </p>
-              <button type="button" class="button search-form-button" type="submit">Найти</button>
+              <button class="button search-form-button" type="submit">Найти</button>
             </div>
           </form>
         </section>
