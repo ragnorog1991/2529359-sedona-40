@@ -108,7 +108,7 @@ body {
   display: flex;
   margin-left: 70px;
   margin-right: 70px;
-  height: 64px;
+  min-height: 64px;
   background: #fff
 }
 
@@ -120,6 +120,7 @@ body {
   font-family: "PT Sans", sans-serif;
   position: relative;
   margin-right: 27px;
+  width: 140px;
 }
 
 .navigation__container-link:hover {
@@ -134,7 +135,7 @@ body {
 }
 
 .navigation__container-link-img {
-  position: relative;
+  position: absolute;
   z-index: 2
 }
 
@@ -166,7 +167,7 @@ body {
   font-weight: 700;
   min-width: 100px;
   min-height: 64px;
-  padding: 20px 16px;
+  padding: 18px 16px;
   text-decoration: none;
 }
 
@@ -231,10 +232,10 @@ body {
 .navigation__user {
   display: flex;
   position: relative;
+  margin: 0;
   min-width: 88px;
   list-style-type: none;
   color: #000;
-  margin-top: 0;
   margin-left: 247px;
   margin-right: auto;
   flex-wrap: wrap
@@ -327,7 +328,7 @@ a:hover {
   content: "";
   width: 93px;
   height: 0;
-  bottom: -2px;
+  bottom: -3px;
   left: 397px;
   border: 2px solid #756257
 }
@@ -669,7 +670,7 @@ a:hover {
 
 .subscribe__descr {
   font-family: "PT Sans", sans-serif;
-  margin-top: 20px
+  margin-top: 21px
 }
 
 .subscribe__form {
@@ -760,7 +761,7 @@ footer {
   align-self: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 9px
+  margin-top: 12px
 }
 
 .social__wrapper-link {
@@ -852,7 +853,7 @@ footer {
 .catalog__wrapper-left {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 70px;
+  column-gap: 71px;
   margin-right: auto;
 }
 
@@ -908,7 +909,7 @@ footer {
 .catalog__wrapper-form {
   display: grid;
   max-width: 1060px;
-  grid-template-columns: 370px 549px;
+  grid-template-columns: 370px 550px;
   justify-content: space-between
 }
 
@@ -920,7 +921,7 @@ footer {
 
 .catalog__wrapper-form-group-title {
   font-family: "PT Sans", sans-serif;
-  margin: 0 0 32px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   color: #fff;
   font-size: 20px;
@@ -942,7 +943,7 @@ footer {
 }
 
 .catalog__wrapper-form-group-list-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .catalog__wrapper-form-group-price {
@@ -1508,12 +1509,14 @@ label {
 
 .control1 {
   position: relative;
-  grid-column: 1/1
+  grid-column: 1/1;
+  margin-top: 21px;
 }
 
 .control2 {
   position: relative;
-  grid-column: 2/2
+  grid-column: 2/2;
+  margin-top: 21px;
 }
 
 .nocolor {
@@ -1735,7 +1738,7 @@ label {
   position: absolute;
   padding: 0;
   top: 64px;
-  right: 51px;
+  right: 52px;
   width: 52px;
   height: 52px;
   background-color: #f2f2f2;
@@ -1874,7 +1877,7 @@ label {
   font-size: 18px;
   line-height: 111%;
   text-align: center;
-  margin-top: 4px
+  margin-top: 8px;
 }
 
 .adult:hover {
