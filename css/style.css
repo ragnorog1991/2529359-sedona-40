@@ -1510,13 +1510,13 @@ label {
 .control1 {
   position: relative;
   grid-column: 1/1;
-  margin-top: 21px;
+  margin-top: 2px;
 }
 
 .control2 {
   position: relative;
   grid-column: 2/2;
-  margin-top: 21px;
+  margin-top: 2px;
 }
 
 .nocolor {
@@ -1688,7 +1688,7 @@ label {
   font-size: 18px;
   color: rgba(0, 0, 0, .3);
   right: 20px;
-  top: 14px
+  top: 11px
 }
 
 .price2-text {
@@ -1697,7 +1697,7 @@ label {
   font-size: 18px;
   color: rgba(0, 0, 0, .3);
   right: 20px;
-  top: 14px
+  top: 11px
 }
 
 .modal {
