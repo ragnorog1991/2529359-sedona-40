@@ -130,7 +130,6 @@ body {
 }
 
 .navigation__container-link:focus-visible {
-  height: 80px;
   outline: 2px solid #000;
   z-index: 2
 }
