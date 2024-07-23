@@ -121,11 +121,12 @@ body {
   position: relative;
   margin-right: 27px;
   width: 140px;
+  z-index: 2;
+  transition: opacity 0.5s;
 }
 
 .navigation__container-link:hover {
   opacity: .6;
-  z-index: 2
 }
 
 .navigation__container-link:focus-visible {
@@ -169,6 +170,7 @@ body {
   min-height: 64px;
   padding: 18px 16px;
   text-decoration: none;
+  transition: color 0.5s;
 }
 
 .navigation__container-list-link:hover {
@@ -208,6 +210,8 @@ body {
   align-self: center;
   z-index: 3;
   text-decoration: none;
+  transition: background-color 0.5s 0.1s, color 0.5s 0.1s;
+
 }
 
 .navigation__wrapper-btn:hover {
@@ -255,7 +259,8 @@ body {
   text-transform: uppercase;
   width: 44px;
   height: 63px;
-  padding: 17px 12px 17px 12px
+  padding: 17px 12px 17px 12px;
+  transition: opacity 0.5s 0.1s;
 }
 
 .navigation__user-item-link:hover {
@@ -635,7 +640,9 @@ a:hover {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  border: none
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s 0.1s, color 0.5s 0.1s;
 }
 
 .search__btn:hover {
@@ -689,7 +696,8 @@ a:hover {
   height: 52px;
   padding: 12px 20px 12px 20px;
   font-size: 18px;
-  font-weight: 400
+  font-weight: 400;
+  transition: background-color 0.5s 0.1s;
 }
 
 .field:active {
@@ -697,7 +705,7 @@ a:hover {
 }
 
 .field:hover {
-  background: #e6e6e6;
+  background-color: #e6e6e6;
   outline: 0
 }
 
@@ -718,7 +726,9 @@ a:hover {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
-  text-transform: uppercase
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.5s 0.1s, color 0.5s 0.1s;
 }
 
 .subscribe__btn:hover {
@@ -786,6 +796,7 @@ footer {
   font-weight: 400;
   line-height: 40px;
   text-decoration: none;
+  transition: color 0.5s 0.1s;
 }
 
 .social__wrapper-phone:hover {
@@ -797,7 +808,11 @@ footer {
 }
 
 .social__wrapper-phone:active {
-  color: rgba(117, 97, 87, .3)
+  color: rgba(117, 97, 87, .3);
+}
+
+.social__wrapper-logo {
+  transition: fill 0.5s 0.1s;
 }
 
 .social__wrapper-logo:hover {
@@ -819,7 +834,8 @@ footer {
   width: 47.33px;
   height: 40px;
   padding: 0 10px 0 10px;
-  fill: #83b3d3
+  fill: #83b3d3;
+  transition: fill 0.5s 0.1s;
 }
 
 .social__link:hover {
@@ -896,6 +912,7 @@ footer {
   letter-spacing: 0;
   text-align: left;
   text-decoration: none;
+  transition: opacity 0.5s 0.1s;
 }
 
 .catalog__wrapper-header-breadcrumbs :last-child:hover {
@@ -974,6 +991,7 @@ footer {
   padding: 8px 50px 8px 50px;
   border: none;
   margin-top: 30px;
+  transition: background-color 0.5s 0.1s, color 0.5s 0.1s;
 }
 
 .wrapper-right-button {
@@ -1045,7 +1063,8 @@ footer {
   align-items: center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  margin-right: 8px
+  margin-right: 8px;
+  transition: outline 0.3s;
 }
 
 .catalog__sort-wrapper-button:hover {
@@ -1133,6 +1152,7 @@ footer {
   align-content: center;
   word-wrap: break-word;
   text-decoration: none;
+  transition: background-color 0.5s 0.1s, color 0.5s 0.1s;
 }
 
 .catalog__container-card-button:hover {
@@ -1221,7 +1241,7 @@ footer {
 }
 
 .selected {
-  background-color: #7db54f
+  background-color: #7db54f;
 }
 
 .selected:hover {
@@ -1252,11 +1272,12 @@ footer {
   padding: 12px 20px 12px 20px;
   font-size: 18px;
   font-weight: 700;
-  border: none
+  border: none;
+  transition: background-color 0.5s 0.1s;
 }
 
 .price1:hover {
-  background: #e6e6e6
+  background-color: #e6e6e6
 }
 
 .price1:focus {
@@ -1277,7 +1298,8 @@ footer {
   padding: 12px 20px 12px 20px;
   font-size: 18px;
   font-weight: 700;
-  border: none
+  border: none;
+  transition: background-color 0.5s 0.1s;
 }
 
 .price2:hover {
@@ -1312,7 +1334,7 @@ input[type=radio] {
 .control-input {
   background-color: #fff;
   width: 20px;
-  height: 20px
+  height: 20px;
 }
 
 .control-input:focus + .control-mark {
@@ -1337,7 +1359,8 @@ label {
   padding: 8px 20px 9px 18px;
   margin-right: auto;
   border: 2px solid #e5e5e5;
-  border-radius: 4px
+  border-radius: 4px;
+  transition: border 0.5s 0.1s;
 }
 
 .select-control:hover {
@@ -1408,10 +1431,11 @@ label {
   justify-content: center;
   border-radius: 4px;
   text-decoration: none;
+  transition: background-color 0.5s 0.1s;
 }
 
 .pagination-link:hover {
-  background: #68a2ca;
+  background-color: #68a2ca;
   color: #fff
 }
 
@@ -1555,7 +1579,8 @@ label {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  background: #fff
+  background: #fff;
+  transition: opacity 0.5s 0.1s;
 }
 
 .control-mark:hover {
@@ -1644,11 +1669,12 @@ label {
 
 .toggle-min {
   top: -8px;
-  left: -1px
+  left: -1px;
+  transition: background-color 0.5s 0.1s;
 }
 
 .toggle-min:hover {
-  background: #e6e6e6
+  background-color: #e6e6e6
 }
 
 .toggle-min:focus {
@@ -1662,11 +1688,12 @@ label {
 
 .toggle-max {
   top: -8px;
-  right: -19px
+  right: -19px;
+  transition: background-color 0.5s 0.1s;
 }
 
 .toggle-max:hover {
-  background: #e6e6e6
+  background-color: #e6e6e6;
 }
 
 .toggle-max:focus {
@@ -1810,7 +1837,6 @@ label {
 .search-form-button:focus {
   background-color: #68a2ca;
   border: none;
-  outline: 0
 }
 
 .search-form-button:active {
@@ -1944,7 +1970,7 @@ label {
   background-color: #f2f2f2;
   border-radius: 4px;
   color: #000;
-  margin-top: 3px
+  margin-top: 3px;
 }
 
 .check-out:hover {
@@ -1960,17 +1986,17 @@ label {
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0
+  margin: 0;
 }
 
 select {
   font-family: "PT Sans", sans-serif;
   -webkit-appearance: none;
-  appearance: none
+  appearance: none;
 }
 
 select::-ms-expand {
-  display: none
+  display: none;
 }
 
 .plus-adult {
@@ -1979,38 +2005,41 @@ select::-ms-expand {
   justify-content: center;
   align-items: center;
   right: 52px;
-  top: 20px;
+  top: 21px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   width: 20px;
-  height: 20px
+  height: 20px;
+}
+
+.plus-adult-icon {
+  fill: #756157;
+  opacity: .3;
+  transition: 0.5s;
 }
 
 .plus-adult:focus {
   outline: 3px solid #82b3d3;
   opacity: unset;
-  border-radius: 4px
 }
 
-.plus-adult-icon {
-  fill: #756157;
-  opacity: .3
+.plus-adult:focus > .plus-adult-icon {
+  fill: #000;
+  opacity: inherit;
 }
+
 
 .plus-adult-icon:hover {
   fill: #000;
-  opacity: unset
+  opacity: unset;
 }
 
-.plus-adult-icon:active {
+.plus-adult:active > .plus-adult-icon {
   opacity: .2;
-  outline: 0
+  outline: none;
 }
 
-.plus-adult-icon:focus {
-  fill: #000
-}
 
 .minus-adult {
   position: absolute;
@@ -2026,40 +2055,34 @@ select::-ms-expand {
   height: 20px
 }
 
-.minus-adult:focus {
-  outline: 3px solid #82b3d3;
-  opacity: unset;
-  border-radius: 4px
-}
 
 .minus-adult-icon {
   fill: #756157;
-  opacity: .3
+  opacity: 0.3;
+  transition: 0.5s;
 }
 
-.minus-adult-icon:hover {
+.minus-adult > .minus-adult-icon:hover {
   fill: #000;
-  opacity: unset
-}
-
-.minus-adult-icon:active {
-  opacity: .2
-}
-
-.minus-adult-icon:focus {
-  border: 3px solid #82b3d3;
   opacity: unset;
-  outline: 0;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px
 }
 
-.minus-adult:focus + .minus-adult-icon {
+.minus-adult:focus {
   outline: 3px solid #82b3d3;
-  border-radius: 4px;
-  fill: #000
+  opacity: unset;
+  fill: #000;
 }
+
+.minus-adult:focus > .minus-adult-icon {
+  fill: #000;
+  opacity: inherit;
+}
+
+.minus-adult:active > .minus-adult-icon {
+  opacity: .2;
+  outline: none;
+}
+
 
 .plus-child {
   position: absolute;
@@ -2075,33 +2098,31 @@ select::-ms-expand {
   height: 20px
 }
 
+.plus-child-icon {
+  fill: #756157;
+  opacity: .3;
+  transition: 0.5s;
+}
+
 .plus-child:focus {
   outline: 3px solid #82b3d3;
   opacity: unset;
   border-radius: 4px
 }
 
-.plus-child-icon {
-  fill: #756157;
-  opacity: .3
-}
-
-.plus-child-icon:hover {
+.plus-child:focus > .plus-child-icon {
   fill: #000;
-  opacity: unset
+  opacity: inherit;
 }
 
-.plus-child-icon:focus {
-  border: 3px solid #82b3d3;
+.plus-child > .plus-child-icon:hover {
+  fill: #000;
   opacity: unset;
-  outline: 0;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px
 }
 
-.plus-child-icon:active {
-  opacity: .2
+.plus-child:active > .plus-child-icon {
+  opacity: .2;
+  outline: none;
 }
 
 .minus-child {
@@ -2118,24 +2139,31 @@ select::-ms-expand {
   height: 20px
 }
 
+.minus-child-icon {
+  fill: #756157;
+  opacity: .3;
+  transition: 0.5s;
+}
+
 .minus-child:focus {
   outline: 3px solid #82b3d3;
   opacity: unset;
-  border-radius: 4px
 }
 
-.minus-child-icon {
-  fill: #756157;
-  opacity: .3
-}
-
-.minus-child-icon:hover {
+.minus-child:focus > .minus-child-icon {
   fill: #000;
-  opacity: unset
+  opacity: inherit;
 }
 
-.minus-child-icon:active {
-  opacity: .2
+
+.minus-child > .minus-child-icon:hover {
+  fill: #000;
+  opacity: unset;
+}
+
+.minus-child:active > .minus-child-icon {
+  opacity: .2;
+  outline: none;
 }
 
 .text-valid-error {
