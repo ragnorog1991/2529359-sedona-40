@@ -839,14 +839,10 @@ footer {
 }
 
 .catalog__wrapper-left {
-  display: grid;
-  grid-template-columns: repeat(2, 150px);
-  grid-template-rows: 75px 68px;
-  margin-top: 40px;
-  -moz-column-gap: 72px;
-  -webkit-column-gap: 72px;
-  column-gap: 72px;
-  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  margin-right: auto;
 }
 
 .catalog__wrapper-header {
@@ -873,7 +869,8 @@ footer {
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .catalog__wrapper-header-breadcrumbs :last-child {
@@ -909,7 +906,8 @@ footer {
 }
 
 .catalog__wrapper-form-group-title {
-  margin: 0;
+  margin: 0 0 32px 0;
+  padding: 0;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -925,7 +923,11 @@ footer {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 16px;
+
+}
+
+.catalog__wrapper-form-group-list-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .catalog__wrapper-form-group-price {
@@ -934,20 +936,14 @@ footer {
 }
 
 .catalog__wrapper-right {
-  display: grid;
-  max-width: 549px;
-  min-height: 160px;
-  grid-template-columns: 288px 261px;
-  grid-template-rows: 65px 59px 56px;
-  -moz-column-gap: 70px;
-  -webkit-column-gap: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
   column-gap: 70px;
-  align-self: flex-end
 }
 
 .catalog__wrapper-right-button {
   font-family: "PT Sans", sans-serif;
-  display: grid;
   width: 191px;
   min-height: 36px;
   align-self: center;
@@ -961,8 +957,13 @@ footer {
   align-content: center;
   padding: 8px 50px 8px 50px;
   border: none;
-  grid-column: 2/2;
-  grid-row: 2/2
+  margin-top: 30px;
+}
+
+.wrapper-right-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .catalog__wrapper-right-button:hover {
@@ -1470,10 +1471,6 @@ label {
   width: 288px;
   min-height: 160px;
   grid-template-columns: repeat(2, 143px);
-  grid-template-rows: 75px 48px 56px;
-  -moz-column-gap: 2px;
-  -webkit-column-gap: 2px;
-  column-gap: 2px
 }
 
 .wrapper__title {
@@ -1481,7 +1478,7 @@ label {
   font-size: 20px;
   font-weight: 700;
   align-self: center;
-  margin-top: 5px
+  margin-top: -12px
 }
 
 .control1 {

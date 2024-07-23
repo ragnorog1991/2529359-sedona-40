@@ -98,7 +98,7 @@
             <form class="catalog__wrapper-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog__wrapper-left">
                 <fieldset class="catalog__wrapper-form-group">
-                  <p class="catalog__wrapper-form-group-title">Инфраструктура:</p>
+                  <legend class="catalog__wrapper-form-group-title">Инфраструктура:</legend>
                   <ul class="catalog__wrapper-form-group-list">
                     <li class="catalog__wrapper-form-group-list-item">
                       <label class="control">
@@ -125,7 +125,7 @@
                 </fieldset>
 
                 <fieldset class="catalog__wrapper-form-group">
-                  <p class="catalog__wrapper-form-group-title">Тип жилья:</p>
+                  <legend class="catalog__wrapper-form-group-title">Тип жилья:</legend>
                   <ul class="catalog__wrapper-form-group-list">
                     <li class="catalog__wrapper-form-group-list-item">
                       <label class="control">
@@ -156,11 +156,11 @@
                   <p class="wrapper__title">Стоимость, ₽:</p>
                   <label class="control1">
                     <span class="price1-text">от</span>
-                    <input type="text" name="price" class="price1" required value="0">
+                    <input type="text" name="price-min" class="price1" required value="0">
                   </label>
                   <label class="control2">
                     <span class="price2-text">до</span>
-                    <input type="text" name="price" class="price2" required value="9000">
+                    <input type="text" name="price-max" class="price2" required value="9000">
                   </label>
                   <div class="range">
                     <div class="range-scale">
@@ -183,8 +183,10 @@
                     </div>
                   </div>
                 </div>
-                <button class="catalog__wrapper-right-button" type="submit">Применить</button>
-                <button class="catalog__wrapper-right-button nocolor" type="reset">Сбросить</button>
+                <div class="wrapper-right-button">
+                  <button class="catalog__wrapper-right-button" type="submit">Применить</button>
+                  <button class="catalog__wrapper-right-button nocolor" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </div>
