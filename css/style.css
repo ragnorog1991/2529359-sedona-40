@@ -236,7 +236,7 @@ body {
   display: flex;
   position: relative;
   margin: 0;
-  min-width: 88px;
+  max-width: 128px;
   list-style-type: none;
   color: #000;
   margin-left: 247px;
@@ -355,7 +355,7 @@ a:hover {
   height: 57px;
   bottom: 0;
   left: 0;
-  background: url(../img/background/sedona_bg_vector.svg) no-repeat 50%/auto;
+  background: url(../img/background/sedona-bg-vector.svg) no-repeat 50%/auto;
 }
 
 .promo__img {
@@ -1552,7 +1552,7 @@ label {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url(../icons/home_link.svg);
+  background-image: url(../icons/home-link.svg);
   background-repeat: no-repeat;
 }
 
