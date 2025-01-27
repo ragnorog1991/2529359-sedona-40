@@ -2285,6 +2285,41 @@ select::-ms-expand {
   }
 }
 
+@media (max-width: 720px) {
+  .modal-search {
+    max-width: 600px;
+  }
+  .check-form-field {
+    max-width: 350px;
+  }
+  .modal-title {
+    font-size: 26px;
+  }
+  .modal-close-button {
+    top: 54px;
+    right: 38px;
+  }
+  .check {
+    justify-content: flex-start;
+  }
+  .adult {
+    margin-left: 15px;
+  }
+  .user-option {
+    grid-template-columns: 244px 224px;
+  }
+  .search-form-button {
+    max-width: 450px;
+  }
+  .child {
+    margin-left: 23px;
+  }
+  .tooltip-toggle {
+    top: -4px;
+    left: 79px;
+  }
+}
+
 @media (max-width: 600px) {
   .social__wrapper-phone {
     font-size: 25px;
