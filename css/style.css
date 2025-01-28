@@ -2312,11 +2312,19 @@ select::-ms-expand {
     max-width: 450px;
   }
   .child {
-    margin-left: 23px;
+    margin-left: 12px;
   }
   .tooltip-toggle {
-    top: -4px;
-    left: 79px;
+    top: -2px;
+    left: 80px;
+  }
+  .minus-adult {
+    right: 105px;
+    top: 24px;
+  }
+  .plus-adult {
+    right: 41px;
+    top: 22px;
   }
 }
 
@@ -2359,6 +2367,47 @@ select::-ms-expand {
     padding: 8px 33px;
     width: 230px;
   }
+  .modal-search {
+    max-width: 450px;
+  }
+  .modal-title {
+    font-size: 20px;
+  }
+  .modal-close-button {
+    top: 50px;
+    right: 25px;
+  }
+  .modal {
+    padding: 64px 27px;
+  }
+  .user-option {
+    grid-template-columns: 184px 224px;
+  }
+  .search-form-button {
+    max-width: 400px;
+    margin-top: 50px;
+  }
+  .check-form-field {
+    max-width: 260px;
+  }
+  .text-valid-error {
+    margin-left: 114px;
+  }
+  .text-valid-available {
+    margin-left: 73px;
+  }
+  .check-in {
+    margin-left: 20px;
+  }
+  .check-out {
+    margin-left: 20px;
+  }
+  .person2 {
+    margin-bottom: 7px;
+  }
+  .person1 {
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2371,6 +2420,75 @@ select::-ms-expand {
   }
   .promo__img {
     width: 100%;
+  }
+  .modal-search {
+    max-width: 350px;
+  }
+  .modal-title {
+    font-size: 17px;
+  }
+  .modal-close-button {
+    width: 40px;
+    height: 40px;
+    top: 53px;
+    right: 22px;
+  }
+  .check-form-field {
+    max-width: 180px;
+  }
+  .text-valid-error {
+    margin-left: 19px;
+  }
+  .text-valid-available {
+    margin-left: -19px;
+  }
+  .field-group {
+    font-size: 17px;
+  }
+  .search-form-button {
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  .user-option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .person1 {
+    margin-bottom: 10px;
+  }
+  .person2 {
+    margin-bottom: 28px;
+  }
+  .child {
+    margin-left: 50px;
+  }
+  .tooltip-toggle {
+    top: 1px;
+    left: 27px;
+  }
+  .plus-adult {
+    right: 11px;
+    top: 21px;
+  }
+  .minus-adult {
+    right: 79px;
+    top: 24px;
+  }
+  .field {
+    width: 184px;
+  }
+  .subscribe__btn {
+    font-size: 17px;
+    width: 150px;
+    padding: 8px 19px;
+  }
+  .adult {
+    margin-left: 70px;
+  }
+  .child {
+    margin-left: 104px;
   }
 }
 
@@ -2408,13 +2526,5 @@ select::-ms-expand {
   }
   .title_fz22 {
     font-size: 16px;
-  }
-  .field {
-    width: 184px;
-  }
-  .subscribe__btn {
-    font-size: 17px;
-    width: 150px;
-    padding: 8px 19px;
   }
 }
