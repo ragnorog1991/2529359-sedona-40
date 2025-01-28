@@ -2408,6 +2408,14 @@ select::-ms-expand {
   .person1 {
     margin-bottom: 8px;
   }
+  .minus-adult {
+    right: 43px;
+    top: 24px;
+  }
+  .plus-adult {
+    right: -17px;
+    top: 22px;
+  }
 }
 
 @media (max-width: 500px) {
